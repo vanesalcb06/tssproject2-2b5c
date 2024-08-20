@@ -1,13 +1,8 @@
-Welcome to TML Solution: --solutionname-- Documentation!
+Welcome to Transactiona Machine Learning Solution: --solutionname-- Documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+.. important::
+   This documentation should be considered as a starting point for your TML solution.
 
 .. note::
 
