@@ -4,7 +4,7 @@
 TML DAG Parameter Details
 ----------------------------
 
-STEP 1: Get TML Core Params: tml_system_step_1_getparams_dag
+STEP 1: Get TML Core Params: tml_system_step_1_getparams_dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
