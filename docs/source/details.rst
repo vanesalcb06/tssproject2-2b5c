@@ -110,7 +110,45 @@ STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag.py
    * - jsoncriteria
      - --jsoncriteria--
 
+STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning-dag.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. list-table::
 
-
+   * - **User Parameter**
+     - **Chosen Value**
+   * - preprocess_data_topic
+     - --preprocess_data_topic--
+   * - ml_data_topic
+     - --ml_data_topic--
+   * - modelruns
+     - --modelruns--
+   * - offset
+     - --offset--
+   * - islogistic
+     - --islogistic--
+   * - networktimeout
+     - --networktimeout--
+   * - modelsearchtuner
+     - --modelsearchtuner--
+   * - dependentvariable
+     - --dependentvariable--
+   * - independentvariables
+     - --independentvariables--
+   * - rollbackoffsets
+     - --rollbackoffsets--
+   * - topicid
+     - --topicid--
+   * - consumefrom
+     - --consumefrom--
+   * - fullpathtotrainingdata
+     - --fullpathtotrainingdata--
+   * - transformtype
+     - --transformtype--
+   * - sendcoefto
+     - --sendcoefto--
+   * - coeftoprocess
+     - --coeftoprocess--
+   * - coefsubtopicnames
+     - --coefsubtopicnames--
 
