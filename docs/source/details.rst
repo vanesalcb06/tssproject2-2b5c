@@ -1,7 +1,7 @@
 [--solutionname--] Details
 ============================
 
-TML Solution DAG Parameters' Details
+TML Solution DAG Parameters' Details: User Chosen Parametets
 ----------------------------
 
 STEP 1: Get TML Core Params: tml_system_step_1_getparams_dag
