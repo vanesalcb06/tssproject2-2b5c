@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Transactional Machine Learning Solution Studio'
-copyright = '2024, Otics Advanced Analytics'
+copyright = '2024, Otics Advanced Analytics, Inc.'
 author = 'Sebastian Maurice'
 
 release = '0.1'
