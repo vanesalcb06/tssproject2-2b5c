@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Transactional Machine Learning Solution Studio'
-copyright = '2024, Otics Advanced Analytics, Inc.'
-author = 'Sebastian Maurice'
+project = '--project--'
+copyright = '--copyright--'
+author = '--author--'
 
-release = '0.1'
-version = '0.1.0'
+release = '--release--'
+version = '--version--'
 
 # -- General configuration
 
