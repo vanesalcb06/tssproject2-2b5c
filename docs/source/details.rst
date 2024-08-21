@@ -58,3 +58,18 @@ STEP 2: Create Kafka Topics: tml_system_step_2_kafka_createtopic_dag
    * - prediction_data_topic
      - --prediction_data_topic--
 
+STEP 3: Produce to Kafka Topics
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+   * - **User Parameter**
+     - **Chosen Value**
+   * - PRODUCETYPE
+     - --PRODUCETYPE--
+   * - TOPIC
+     - --TOPIC--
+   * - PORT
+     - --PORT--
+   * - IDENTIFIER
+     - --IDENTIFIER--
