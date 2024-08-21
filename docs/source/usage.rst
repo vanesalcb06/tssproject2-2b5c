@@ -1,9 +1,9 @@
-Transactional Machine LEarning Solution Studio (TSS) Usage
+Transactional Machine Learning Solution Studio (TSS) Usage
 =====
 
 .. _installation:
 
-Installation
+TSS Container Run Procedure 
 ------------
 
 `TSS Readthedocs Website https://tml.readthedocs.io/en/latest/docker.html>`_
