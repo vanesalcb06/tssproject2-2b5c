@@ -14,3 +14,5 @@
      - --visualizationurl--
    * - [--solutionname--] Github Repo
      - --gitrepo--
+   * - Readthedocs URL
+     - --readthedocs--
