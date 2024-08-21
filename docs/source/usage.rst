@@ -6,5 +6,8 @@ Transactional Machine Learning Solution Studio (TSS) Usage
 TSS Container Run Procedure 
 ------------
 
-`TSS Readthedocs Website https://tml.readthedocs.io/en/latest/docker.html>`_
+.. important:: 
+   All TSS details can be found on the main site: `<https://tml.readthedocs.io>`_
+
+   `For TSS Container Details Go Directly here. <https://tml.readthedocs.io/en/latest/docker.html>`_
 
