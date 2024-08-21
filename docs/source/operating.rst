@@ -7,7 +7,7 @@
  .. list-table::
 
     * - **Type**
-      - Details
+      - **Details**
     * - Docker Container
       - --dockercontainer--
     * - Visualization URL
