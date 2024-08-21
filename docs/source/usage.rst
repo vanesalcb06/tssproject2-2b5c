@@ -1,4 +1,4 @@
-Usage
+Transactional Machine LEarning Solution Studio (TSS) Usage
 =====
 
 .. _installation:
@@ -10,7 +10,7 @@ To use Lumache, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+https://tml.readthedocs.io/en/latest/docker.html
 
 Creating recipes
 ----------------
