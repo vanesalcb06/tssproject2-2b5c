@@ -73,3 +73,44 @@ STEP 3: Produce to Kafka Topics
      - --PORT--
    * - IDENTIFIER
      - --IDENTIFIER--
+
+STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+   * - **User Parameter**
+     - **Chosen Value**
+   * - raw_data_topic
+     - --raw_data_topic--
+   * - preprocess_data_topic
+     - --preprocess_data_topic--
+   * - preprocessconditions
+     - --preprocessconditions--
+   * - delay
+     - --delay--
+   * - array
+     - --array--
+   * - saveasarray
+     - --saveasarray--
+   * - topicid
+     - --topicid--
+   * - rawdataoutput
+     - --rawdataoutput--
+   * - asynctimeout
+     - --asynctimeout--
+   * - timedelay
+     - --timedelay--
+   * - preprocesstypes
+     - --preprocesstypes--
+   * - pathtotmlattrs
+     - --pathtotmlattrs--
+   * - identifier
+     - --identifier--
+   * - jsoncriteria
+     - --jsoncriteria--
+
+
+
+
+
