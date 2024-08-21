@@ -10,6 +10,8 @@
      - **Details**
    * - Docker Container
      - --dockercontainer--
+   * - Docker Run Command
+     - --dockerrun--
    * - Visualization URL
      - --visualizationurl--
    * - [--solutionname--] Github Repo
