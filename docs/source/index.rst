@@ -11,6 +11,7 @@ Contents
 
 .. toctree::
 
+   operating
    details
    usage
    api
