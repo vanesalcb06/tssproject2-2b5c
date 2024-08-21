@@ -14,4 +14,3 @@ Contents
    operating
    details
    usage
-   api
