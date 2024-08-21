@@ -152,3 +152,43 @@ STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning
    * - coefsubtopicnames
      - --coefsubtopicnames--
 
+STEP 6: Entity Based Predictions: tml-system-step-6-kafka-predictions-dag
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+   * - **User Parameter**
+     - **Chosen Value**
+   * - preprocess_data_topic
+     - --preprocess_data_topic--
+   * - ml_prediction_topic
+     - --ml_prediction_topic--
+   * - streamstojoin
+     - --streamstojoin--
+   * - inputdata
+     - --inputdata--
+   * - consumefrom
+     - --consumefrom--
+   * - offset
+     - --offset--
+   * - delay
+     - --delay--
+   * - usedeploy
+     - --usedeploy--
+   * - networktimeout
+     - --networktimeout--
+   * - preprocess_data_topic
+     - --preprocess_data_topic--
+   * - maxrows
+     - --maxrows--
+   * - topicid
+     - --topicid--
+   * - pathtoalgos
+     - --pathtoalgos--
+
+
+
+
+
+
+
