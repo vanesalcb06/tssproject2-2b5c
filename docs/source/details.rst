@@ -186,9 +186,25 @@ STEP 6: Entity Based Predictions: tml-system-step-6-kafka-predictions-dag
    * - pathtoalgos
      - --pathtoalgos--
 
+STEP 7: Real-Time Visualization: tml-system-step-7-kafka-visualization-dag
+^^^^^^^^^^^^^^^^^^^^^
 
+.. list-table::
 
-
-
-
+   * - **User Parameter**
+     - **Chosen Value**
+   * - vipervizport
+     - --vipervizport--
+   * - topic
+     - --topic--
+   * - secure
+     - --secure--
+   * - offset
+     - --offset--
+   * - append
+     - --append--
+   * - chip
+     - --chip--
+   * - rollbackoffset
+     - --rollbackoffset--
 
