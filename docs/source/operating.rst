@@ -25,9 +25,9 @@
      - --airflowurl--
      - This is the Airflow URL for your solution container.  
 
-       NOTE: While is provided in the conatiner - you should run/schedule
- 
-       solution container runs from the TSS
+       NOTE: While this is provided in the container - you 
+
+       should run/schedule solution containerss from the TSS
    * - [--solutionname--] Github Repo
      - --gitrepo--
      - This is the Github repo for all your solution code
