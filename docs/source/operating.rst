@@ -23,3 +23,5 @@
      - --gitrepo--
    * - Readthedocs URL
      - --readthedocs--
+   * - Solution Trigger DAG
+     - --triggername--
