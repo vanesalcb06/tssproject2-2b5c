@@ -17,6 +17,8 @@
      - --dockerrun--
    * - Visualization URL
      - --visualizationurl--
+   * - Solution Airflow URL
+     - --airflowurl--
    * - [--solutionname--] Github Repo
      - --gitrepo--
    * - Readthedocs URL
