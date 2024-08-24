@@ -5,7 +5,7 @@
    These are the operating details for your TML solution.
 
 .. tip::
-   You must have your [--solutionname--] container running before connecting to the Visualization URL.
+   You must have your [--solutionname--] container running before connecting to the Visualization and Airflow URLs.
 
 .. list-table::
 
