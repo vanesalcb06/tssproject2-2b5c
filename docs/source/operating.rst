@@ -20,7 +20,7 @@
      - This is the Docker Run command for your solution container
    * - Visualization URL
      - --visualizationurl--
-     - This is the visualization URL for yor TML dashboard
+     - This is the visualization URL for your TML dashboard
    * - Solution Airflow URL
      - --airflowurl--
      - This is the Airflow URL for your solution container.  
