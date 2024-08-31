@@ -17,10 +17,14 @@
      - This is the name of your solution container
    * - Docker Run Command
      - --dockerrun--
-     - This is the Docker Run command for your solution container
+     - This is the Docker Run command for your 
+
+       solution container
    * - Visualization URL
      - --visualizationurl--
-     - This is the visualization URL for your TML dashboard
+     - This is the visualization URL for your 
+
+       TML dashboard
    * - Solution Airflow URL
      - --airflowurl--
      - This is the Airflow URL for your solution container.  
@@ -36,7 +40,11 @@
      - This is this url.
    * - Solution Trigger DAG
      - --triggername--
-     - This is the name of the solution DAG you chose to trigger 
+     - This is the name of the solution DAG you 
+
+       chose to trigger 
    * - TML Binaries Listening Ports
      - --tmlbinaries--
-     - These are the ports the TML binaries are listening on.
+     - These are the ports the TML binaries 
+
+       are listening on.
