@@ -40,5 +40,3 @@
    * - TML Binaries Listening Ports
      - --tmlbinaries--
      - These are the ports the TML binaries are listening on.
-
-       when your container starts.
