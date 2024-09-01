@@ -48,3 +48,16 @@
      - These are the ports the TML binaries 
 
        are listening on.
+   * - TMUX Windows
+     - --tmuxwindows--
+     - Your solution is running in these  
+
+       TMUX windows:
+   
+        - To view type **tmux ls**
+
+        - To go inside window type:
+
+          **tmux a -t <window name>**
+
+       
