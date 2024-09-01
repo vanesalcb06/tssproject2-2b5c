@@ -54,7 +54,9 @@
 
        TMUX windows:
    
-        - To view windows, type **tmux ls**
+        - To view windows, type:
+
+          **tmux ls**
 
         - To go inside window, type:
 
