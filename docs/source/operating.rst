@@ -54,21 +54,21 @@
 
        TMUX windows:
    
-        - To view type **tmux ls**
+        - To view windows, type **tmux ls**
 
-        - To go inside window type:
+        - To go inside window, type:
 
           **tmux a -t <window name>**
 
-        - To exit window type:
+        - To exit window, type:
 
           **CTLR+b, d**
 
-        - To scroll window type:
+        - To scroll window, type:
 
           **CTLR+b, [**
 
-        - To un-scroll window type:
+        - To un-scroll window, type:
 
           **CTLR+[**
 
