@@ -39,7 +39,7 @@
      - --readthedocs--
      - This is this url.
    * - Solution Trigger DAG
-     - --triggername--
+     - None
      - This is the name of the solution DAG you 
 
        chose to trigger 
