@@ -60,4 +60,16 @@
 
           **tmux a -t <window name>**
 
+        - To exit window type:
+
+          **CTLR+b, d**
+
+        - To scroll window type:
+
+          **CTLR+b, [**
+
+        - To un-scroll window type:
+
+          **CTLR+[**
+
        
