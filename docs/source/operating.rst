@@ -19,12 +19,16 @@
      - --dockerrun--
      - This is the Docker Run command for your 
 
-       solution container
+       solution container.  Note ports may change at runtime. 
+
+       The solution documentation will update automatically.
    * - Visualization URL
      - --visualizationurl--
      - This is the visualization URL for your 
 
-       TML dashboard
+       TML dashboard. Note ports may change at runtime. 
+
+       The solution documentation will update automatically.
    * - Solution Airflow URL
      - --airflowurl--
      - This is the Airflow URL for your solution container.  
