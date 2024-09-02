@@ -74,7 +74,7 @@ STEP 3: Produce to Kafka Topics
    * - IDENTIFIER
      - TML solution
 
-STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag.py
+STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -110,7 +110,7 @@ STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag.py
    * - jsoncriteria
      - uid=metadata.dsn,filter:allrecords~subtopics=metadata.property_name~values=datapoint.value~identifiers=metadata.display_name~datetime=datapoint.updated_at~msgid=datapoint.id~latlong=lat:long
 
-STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning-dag.py
+STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning-dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -208,3 +208,37 @@ STEP 7: Real-Time Visualization: tml-system-step-7-kafka-visualization-dag
    * - rollbackoffset
      - 500
 
+STEP 8: tml_system_step_8_deploy_solution_to_docker_dag
+^^^^^^^^^^^^^^^^^^^^^
+.. list-table::
+
+   * - **User Parameter**
+     - **Chosen Value**
+   * - Docker Container
+     - --dockercontainer--
+   * - Docker Run Command
+     - --dockerrun--
+
+STEP 9: tml_system_step_9_privategpt_qdrant_dag
+^^^^^^^^^^^^^^^^^^^^^
+.. list-table::
+
+   * - **User Parameter**
+     - **Chosen Value**
+   * - PrivateGPT Container
+     - --privategptcontainer--
+   * - PrivateGPT Run Command
+     - --privategptrun--
+   * - Qdrant Container
+     - --qdrantcontainer--
+   * - Qdrant Run Command
+     - --qdrantrun--
+
+STEP 10: tml_system_step_10_documentation_dag
+^^^^^^^^^^^^^^^^^^^^^
+.. list-table::
+
+   * - **User Parameter**
+     - **Chosen Value**
+   * - Solution Documentation URL
+     - --readthedocs--
