@@ -1,4 +1,4 @@
-[myawesometmlsolution] Details
+[--solutionname--] Details
 ============================
 
 TML Solution DAG Parameters' Details: User Chosen Parametets
@@ -12,19 +12,19 @@ STEP 1: Get TML Core Params: tml_system_step_1_getparams_dag
    * - **User Parameter**
      - **Chosen Value**
    * - solutionname
-     - myawesometmlsolution
+     - --solutionname--
    * - solutiontitle
-     - My Solution Title
+     - --solutiontitle--
    * - solutiondescription
-     - This is an awesome real-time solution built by TSS
+     - --solutiondescription--
    * - brokerhost
-     - 127.0.0.1
+     - --brokerhost--
    * - brokerport
-     - 9092
+     - --brokerport--
    * - cloudusername
-     - None
+     - --cloudusername--
    * - ingestdatamethod
-     - localfile
+     - --ingestdatamethod--
  
 STEP 2: Create Kafka Topics: tml_system_step_2_kafka_createtopic_dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -34,29 +34,29 @@ STEP 2: Create Kafka Topics: tml_system_step_2_kafka_createtopic_dag
    * - **User Parameter**
      - **Chosen Value**
    * - companyname
-     - Otics
+     - --companyname--
    * - myname
-     - Sebastian
+     - --myname--
    * - myemail
-     - Sebastian.Maurice
+     - --myemail--
    * - mylocation
-     - Toronto
+     - --mylocation--
    * - replication
-     - 1
+     - --replication--
    * - numpartitions
-     - 1
+     - --numpartitions--
    * - enabletls
-     - 1
+     - --enabletls--
    * - microserviceid
-     - 
+     - --microserviceid--
    * - raw_data_topic
-     - iot-raw-data
+     - --raw_data_topic--
    * - preprocess_data_topic
-     - iot-preprocess-data,iot-preprocess2-data
+     - --preprocess_data_topic--
    * - ml_data_topic
-     - ml-data
+     - --ml_data_topic--
    * - prediction_data_topic
-     - prediction-data
+     - --prediction_data_topic--
 
 STEP 3: Produce to Kafka Topics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -66,13 +66,13 @@ STEP 3: Produce to Kafka Topics
    * - **User Parameter**
      - **Chosen Value**
    * - PRODUCETYPE
-     - LOCALFILE
+     - --PRODUCETYPE--
    * - TOPIC
-     - iot-raw-data
+     - --TOPIC--
    * - PORT
      - --PORT--
    * - IDENTIFIER
-     - TML solution
+     - --IDENTIFIER--
 
 STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,33 +82,33 @@ STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
    * - **User Parameter**
      - **Chosen Value**
    * - raw_data_topic
-     - iot-raw-data
+     - --raw_data_topic--
    * - preprocess_data_topic
-     - iot-preprocess-data,iot-preprocess2-data
+     - --preprocess_data_topic--
    * - preprocessconditions
-     - 
+     - --preprocessconditions--
    * - delay
-     - 70
+     - --delay--
    * - array
-     - 0
+     - --array--
    * - saveasarray
-     - 1
+     - --saveasarray--
    * - topicid
-     - -999
+     - --topicid--
    * - rawdataoutput
-     - 1
+     - --rawdataoutput--
    * - asynctimeout
-     - 120
+     - --asynctimeout--
    * - timedelay
-     - 0
+     - --timedelay--
    * - preprocesstypes
-     - anomprob,trend,avg,entropy,kurtosis
+     - --preprocesstypes--
    * - pathtotmlattrs
      - --pathtotmlattrs--
    * - identifier
-     - TML solution
+     - --identifier--
    * - jsoncriteria
-     - uid=metadata.dsn,filter:allrecords~subtopics=metadata.property_name~values=datapoint.value~identifiers=metadata.display_name~datetime=datapoint.updated_at~msgid=datapoint.id~latlong=lat:long
+     - --jsoncriteria--
 
 STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning-dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -118,13 +118,13 @@ STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning
    * - **User Parameter**
      - **Chosen Value**
    * - preprocess_data_topic
-     - iot-preprocess-data,iot-preprocess2-data
+     - --preprocess_data_topic--
    * - ml_data_topic
-     - ml-data
+     - --ml_data_topic--
    * - modelruns
      - --modelruns--
    * - offset
-     - -1
+     - --offset--
    * - islogistic
      - --islogistic--
    * - networktimeout
@@ -138,7 +138,7 @@ STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning
    * - rollbackoffsets
      - --rollbackoffsets--
    * - topicid
-     - -999
+     - --topicid--
    * - consumefrom
      - --consumefrom--
    * - fullpathtotrainingdata
@@ -160,7 +160,7 @@ STEP 6: Entity Based Predictions: tml-system-step-6-kafka-predictions-dag
    * - **User Parameter**
      - **Chosen Value**
    * - preprocess_data_topic
-     - iot-preprocess-data,iot-preprocess2-data
+     - --preprocess_data_topic--
    * - ml_prediction_topic
      - --ml_prediction_topic--
    * - streamstojoin
@@ -170,19 +170,17 @@ STEP 6: Entity Based Predictions: tml-system-step-6-kafka-predictions-dag
    * - consumefrom
      - --consumefrom--
    * - offset
-     - -1
+     - --offset--
    * - delay
-     - 70
+     - --delay--
    * - usedeploy
      - --usedeploy--
    * - networktimeout
      - --networktimeout--
-   * - preprocess_data_topic
-     - iot-preprocess-data,iot-preprocess2-data
    * - maxrows
      - --maxrows--
    * - topicid
-     - -999
+     - --topicid--
    * - pathtoalgos
      - --pathtoalgos--
 
@@ -194,19 +192,19 @@ STEP 7: Real-Time Visualization: tml-system-step-7-kafka-visualization-dag
    * - **User Parameter**
      - **Chosen Value**
    * - vipervizport
-     - 54881
+     - --vipervizport--
    * - topic
-     - iot-preprocess
+     - --topic--
    * - secure
-     - 1
+     - --secure--
    * - offset
-     - -1
+     - --offset--
    * - append
-     - 0
+     - --append--
    * - chip
-     - AMD64
+     - --chip--
    * - rollbackoffset
-     - 500
+     - --rollbackoffset--
 
 STEP 8: tml_system_step_8_deploy_solution_to_docker_dag
 ^^^^^^^^^^^^^^^^^^^^^
