@@ -12,10 +12,12 @@
    * - **Type**
      - **Details**
      - **Explanation**
-   * - Docker Container
+   * - TSS Docker Run Command
+     - --tssdockerrun--
+   * - Your Solution Docker Container
      - --dockercontainer--
      - This is the name of your solution container
-   * - Docker Run Command
+   * - Your Solution Docker Run Command
      - --dockerrun--
      - This is the Docker Run command for your 
 
