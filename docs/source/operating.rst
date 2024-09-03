@@ -12,8 +12,13 @@
    * - **Type**
      - **Details**
      - **Explanation**
-   * - TSS Docker Run Command
+   * - TML Solution Studio Docker Run Command
      - --tssdockerrun--
+     - This is the TML Solution Studio Docker Run command.  
+
+       Note for MAC users change amd64 to arm64 in 
+
+       the container name. 
    * - Your Solution Docker Container
      - --dockercontainer--
      - This is the name of your solution container
