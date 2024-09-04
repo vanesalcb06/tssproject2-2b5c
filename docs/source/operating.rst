@@ -133,7 +133,7 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the name of the DAG that comprises your solution.
 
        This DAG is triggered automatically when you run this container.
-   * - \-\-env  VIPERVIZPORT
+   * - \-\-env  VIPERVIZPORT=--vipervizport--
      - This is the port Viperviz is listening.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
@@ -198,7 +198,7 @@ Your Solution Dashboard URL: Parameter Explanation
 
    * - **Parameter**
      - **Explanation**
-   * - http://localhost:<vipervizport>/<html file>
+   * - http://localhost:<--vipervizport-->/<html file>
      - This is the URL pointing to an html file running inside your solution container.
 
        Refer to: `TML Real-time dashboards <https://tml.readthedocs.io/en/latest/dashboards.html>`_
