@@ -20,11 +20,116 @@ This is the TML Solution Studio Docker Run command.  Note for MAC users change a
 .. important::
    --tssdockerrun--
 
+TSS Docker Run Command: Parameter Explanation
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+   * - **Parameter**
+     - **Explanation**
+   * - docker
+     - This calls the docker engine
+   * - -d
+     - This runs your container in **detached** mode
+   * - \-\-net=host
+     - This give your container access to your host operating system
+   * - \-\-env MAINHOST
+     - \-\-env stands for environment.  MAINHOST is an environment
+
+       variable in your container that runs 
+
+       in the contaniner on 127.0.0.1 normally.
+   * - \-\-env AIRFLOWPORT
+     - Apache Airflow runs in your container on this assigned
+
+       port.
+   * - -v
+     - This stands for **volume mapping**.  It maps a local folder
+
+       in your host machine to the folder in the container.  The value **z**
+
+        means the container has **shared access** to your local folder.
+
+        For example, -v /mylocal/folder:/dagslocalbackup:z, means map 
+
+        /mylocal/folder (on my host machine) to **/dagslocalbackup**
+
+        in the contaner.   This allows files generated in the container 
+
+        to be automatically written to your local folder.
+
+   * - \-\-env GITREPOURL
+     - This is your Github repo, that you cloned from **https://github.com/smaurice101/raspberrypi**
+   * -  \-\-env CHIP=AMD64
+     - This is the chip if your are running the TSS on windows/linux.
+
+       If you are running MAC, use **CHIP=ARM64**
+   * - \-\-env TSS=1
+     - This is the TSS value and MUST be 1.
+   * - \-\-env SOLUTIONNAME=TSS
+     - This is the solution name.
+   * - \-\-env READTHEDOCS
+     - This is the readthedocs API token you created.
+
+       Refer to: `Set up readthedocs <https://tml.readthedocs.io/en/latest/readthedocs.html>`_
+   * - \-\-env  GITUSERNAME
+     - This is your Githib username.
+   * - \-\-env GITPASSWORD
+     - This is the Github Personal Access Token you created.
+
+       Refer to: `Creating Github Token: <https://tml.readthedocs.io/en/latest/docker.html#generating-personal-access-tokens-in-github>`_
+   * - \-\-env DOCKERUSERNAME
+     - This is your `Docker Hub <https://hub.docker.com/>`_ username.
+   * - \-\-env DOCKERPASSWORD
+     - This is your Docker Hub password.
+   * - maadsdocker/tml-solution-studio-with-airflow-amd64
+     - This is the TSS container name for AMD64
+
+       If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
+
 Your Solution Docker Container
 --------------------------
 
 .. important::
    --dockercontainer--
+
+Your Solution Docker Run Command: Parameter Explanation
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+   * - **Parameter**
+     - **Explanation**
+   * - docker
+     - This calls the docker engine
+   * - -d
+     - This runs your container in **detached** mode
+   * - \-\-net=host
+     - This give your container access to your host operating system
+   * - \-\-env TSS=0
+     - Internal TSS variable. MUST be 0.
+   * - \-\-env SOLUTIONNAME
+     - This is the name of your TML solution.
+   * - \-\-env SOLUTIONDAG
+     - This is the name of the DAG that comprises your solution.
+
+       This DAG is triggered automatically when you run this container.
+   * - \-\-env  GITUSERNAME
+     - This is your Githib username.
+   * - \-\-env GITPASSWORD
+     - This is the Github Personal Access Token you created.
+
+       Refer to: `Creating Github Token: <https://tml.readthedocs.io/en/latest/docker.html#generating-personal-access-tokens-in-github>`_
+   * - \-\-env GITREPOURL
+     - This is your Github repo, that you cloned from **https://github.com/smaurice101/raspberrypi**
+   * - \-\-env READTHEDOCS
+     - This is the readthedocs API token you created.
+
+       Refer to: `Set up readthedocs <https://tml.readthedocs.io/en/latest/readthedocs.html>`_
+   * - \-\-env CHIP=--chip--
+     - This is the chip family of your OS.
+   * - --containername--
+     - Your solution container name. 
 
 Your Solution Docker Run Command 
 -----------------------
@@ -39,6 +144,44 @@ This is the visualization URL for your TML dashboard. Note ports may change at r
 
 .. important::
    --visualizationurl--
+
+Your Solution Dashboard URL: Parameter Explanation
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+   * - **Parameter**
+     - **Explanation**
+   * - http://localhost:<port>/<html file>
+     - This is the URL pointing to an html file running inside your solution container.
+
+       Refer to: `TML Real-time dashboards <https://tml.readthedocs.io/en/latest/dashboards.html>`_
+   * - topic
+     - This is the topic that the TML binary `Viperviz <https://tml.readthedocs.io/en/latest/usage.html>`_ 
+
+       is reading (consuming) in Apache Kafka and sending it to your broweser over websockets.  
+   * - offset
+     - This value tells the Viperviz binary to read the latest real-time data. 
+
+       **offset=-1**, means to go to the end of the data stream and get the latest record.
+   * - groupid
+     - This can be empty. 
+   * - rollbackoffset
+     - This is the number of offsets to **rollback** the data stream from the **offset** value.
+
+       Note: If you increase this number, Viperviz will send more data to your browser.  
+
+       But be carefull, too much data may crash your browser or computer.
+   * - topictype
+     - Leave as is.
+   * - append
+     - This tells your html file whether to append or not the data streaming to your browser.
+
+       If append=0, the html will not apend, if append=1, then data will accumulate in your browser.
+   * - secure
+     - This tells Viperviz whether to encrypt your data to the browser.  
+
+       If secure=1, data are encrypted, secure=0 no encryption.
 
 Solution Airflow URL
 ----------------
