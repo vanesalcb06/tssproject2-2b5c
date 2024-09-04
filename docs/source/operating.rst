@@ -167,7 +167,7 @@ Your Solution Docker Run Command: Parameter Explanation
        for a connection as shown here: :ref:`Your Solution TML Binaries`
 
        In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
-   * - --containername--
+   * - --dockercontainer--
      - Your solution container name. 
 
 Your Solution Docker Run Command 
