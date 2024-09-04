@@ -184,6 +184,18 @@ This is the Docker Run command for your solution container.  Note ports may chan
 .. important::
    --externalport--
 
+   This is the external port that you can use when making an external connection to your TML solution
+
+   for external data ingestion.  You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
+
+   Note: if EXTERNALPORT=-1, TSS will choose a free port randomly.
+
+   This external port is used by `Viper binary <https://tml.readthedocs.io/en/latest/usage.html>`_: Viper will be listening on this port 
+
+   for a connection as shown here: :ref:`Your Solution TML Binaries`
+
+   In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
+
 Your Solution Dashboard URL
 -----------------------
 This is the visualization URL for your TML dashboard. Note ports may change at runtime.  The solution documentation will update automatically.
