@@ -72,6 +72,8 @@ TSS Docker Run Command: Parameter Explanation
      - This is the solution name.
    * - \-\-env VIPERVIZPORT
      - This is the port the Viperviz binary will listen on for connections.
+
+       Note: If VIPERVIZPORT=-1, a random free port is selected by TSS.
    * - \-\-env EXTERNALPORT=--externalport--
      - This is the external port that will be assigned to your TML solution for external access.
 
