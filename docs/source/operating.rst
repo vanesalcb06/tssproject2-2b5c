@@ -181,13 +181,6 @@ Your Solution Dashboard URL: Parameter Explanation
 
        If secure=1, data are encrypted, secure=0 no encryption.
 
-Solution Airflow URL
-----------------
-This is the Airflow URL for your solution container.  NOTE: While this is provided in the container - you should run/schedule solution containerss from the TSS.
-
-.. important::
-   --airflowurl--
-
 [--solutionname--] Github Repo
 ---------------
 This is the Github repo for all your solution code
