@@ -8,6 +8,8 @@
 
    dynamically update with the **Runtime Ports** for your solution.
 
+   The ports below were valid for the last run of your solution.
+
 .. tip::
    You must have your [--solutionname--] container running before connecting to the Visualization and Airflow URLs.
 
