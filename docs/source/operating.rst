@@ -35,12 +35,6 @@ TSS Docker Run Command: Parameter Explanation
      - This runs your container in **detached** mode
    * - \-\-net=host
      - This give your container access to your host operating system
-   * - \-\-env MAINHOST
-     - \-\-env stands for environment.  MAINHOST is an environment
-
-       variable in your container that runs 
-
-       in the contaniner on 127.0.0.1 normally.
    * - -v
      - This stands for **volume mapping**.  It maps a local folder
 
@@ -68,6 +62,12 @@ TSS Docker Run Command: Parameter Explanation
      - This is the airflow port for TSS.  Connect to TSS from your browser:
 
        http://localhost:--airflowport--
+   * - \-\-env SOLUTIONAIRFLOWPORT
+     - This is the airflow port for TML solution.  Connect to TSS from your browser:
+
+       http://localhost:--solutionairflowport--
+
+       Note: If SOLUTIONAIRFLOWPORT=-1, then TSS gets a free port randomly.
    * - \-\-env SOLUTIONNAME=TSS
      - This is the solution name.
    * - \-\-env READTHEDOCS
