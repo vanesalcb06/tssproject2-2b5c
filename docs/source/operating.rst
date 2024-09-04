@@ -136,6 +136,13 @@ This is the Docker Run command for your solution container.  Note ports may chan
 .. important::
    --dockerrun--
 
+Your Solution External Port
+-----------------------
+This is the Docker Run command for your solution container.  Note ports may change at runtime. The solution documentation will update automatically.
+
+.. important::
+   --externalport--
+
 Your Solution Dashboard URL
 -----------------------
 This is the visualization URL for your TML dashboard. Note ports may change at runtime.  The solution documentation will update automatically.
