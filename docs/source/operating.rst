@@ -138,7 +138,7 @@ Your Solution Docker Run Command: Parameter Explanation
    * - \-\-env  SOLUTIONAIRFLOWPORT
      - This is the port for Airflow in TML solution container.
 
-       Note: This is provided mainly for debugging and testing purposes
+       Note: This is provided mainly for debugging and testing purposes only.
    * - \-\-env  GITUSERNAME
      - This is your Github username.
    * - \-\-env GITPASSWORD
