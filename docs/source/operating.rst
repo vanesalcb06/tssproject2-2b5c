@@ -41,10 +41,6 @@ TSS Docker Run Command: Parameter Explanation
        variable in your container that runs 
 
        in the contaniner on 127.0.0.1 normally.
-   * - \-\-env AIRFLOWPORT
-     - Apache Airflow runs in your container on this assigned
-
-       port.
    * - -v
      - This stands for **volume mapping**.  It maps a local folder
 
