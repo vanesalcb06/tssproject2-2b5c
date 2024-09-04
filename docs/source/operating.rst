@@ -112,6 +112,16 @@ Your Solution Docker Container
 .. important::
    --dockercontainer--
 
+Your Solution Airflow Port
+--------------------------
+
+This is the airflow port in your solution container.  
+
+It can be accessed by entering: http://localhost:--solutionairflowport--
+
+.. important::
+   --solutionairflowport--
+
 Your Solution Docker Run Command: Parameter Explanation
 ^^^^^^^^^^^^^^^^^^^^^^
 
