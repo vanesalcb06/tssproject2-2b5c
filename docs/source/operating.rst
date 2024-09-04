@@ -13,7 +13,7 @@
      - **Details**
      - **Explanation**
    * - TML Solution Studio Docker Run Command
-     - --tssdockerrun--
+     - :ref:`TSS Docker Run Command`
      - This is the TML Solution Studio Docker Run command.  
 
        Note for MAC users change amd64 to arm64 in 
@@ -23,14 +23,14 @@
      - --dockercontainer--
      - This is the name of your solution container
    * - Your Solution Docker Run Command
-     - --dockerrun--
+     - :ref:`Your Solution Docker Run Command`
      - This is the Docker Run command for your 
 
        solution container.  Note ports may change at runtime. 
 
        The solution documentation will update automatically.
    * - Visualization URL
-     - --visualizationurl--
+     - :ref:`Your Solution Dashboard URL`
      - This is the visualization URL for your 
 
        TML dashboard. Note ports may change at runtime. 
@@ -55,12 +55,12 @@
 
        chose to trigger 
    * - TML Binaries Listening Ports
-     - --tmlbinaries--
+     - :ref:`Your Solution TML Binaries`
      - These are the ports the TML binaries 
 
        are listening on.
    * - TMUX Windows
-     - --tmuxwindows--
+     - :ref:`Your Solution TMUX Windows`
      - Your solution is running in these  
 
        TMUX windows:
@@ -85,4 +85,32 @@
 
           **CTLR+[**
 
-       
+TSS Docker Run Command
+-----------------------
+
+.. important::
+   --tssdockerrun--
+
+Your Solution Docker Run Command 
+-----------------------
+
+.. important::
+   --dockerrun--
+
+Your Solution Dashboard URL
+-----------------------
+
+.. important::
+   --visualizationurl--
+
+Your Solution TML Binaries 
+-----------------------
+
+.. important::
+   --tmlbinaries--
+
+Your Solution TMUX Windows 
+-----------------------
+
+.. important::
+   --tmuxwindows--
