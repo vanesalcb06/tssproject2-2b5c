@@ -70,6 +70,21 @@ TSS Docker Run Command: Parameter Explanation
        Note: If SOLUTIONAIRFLOWPORT=-1, then TSS gets a free port randomly.
    * - \-\-env SOLUTIONNAME=TSS
      - This is the solution name.
+   * - \-\-env VIPERVIZPORT
+     - This is the port the Viperviz binary will listen on for connections.
+   * - \-\-env EXTERNALPORT=--externalport--
+     - This is the external port that will be assigned to your TML solution for external access.
+
+       You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC 
+       <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
+
+       Note: if EXTERNALPORT=-1, TSS will choose a free port randomly.
+
+       This external port is used by `Viper binary <https://tml.readthedocs.io/en/latest/usage.html>`_: Viper will be listening on this port 
+
+       for a connection as shown here: :ref:`Your Solution TML Binaries`
+
+       In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows`
    * - \-\-env READTHEDOCS
      - This is the readthedocs API token you created.
 
@@ -116,8 +131,16 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the name of the DAG that comprises your solution.
 
        This DAG is triggered automatically when you run this container.
+   * - \-\-env  VIPERVIZPORT
+     - This is the port Viperviz is listening.  
+
+       You point your browser to this port. See :ref:`Your Solution Dashboard URL`
+   * - \-\-env  SOLUTIONAIRFLOWPORT
+     - This is the port for Airflow in TML solution container.
+
+       Note: This is provided mainly for debugging and testing purposes
    * - \-\-env  GITUSERNAME
-     - This is your Githib username.
+     - This is your Github username.
    * - \-\-env GITPASSWORD
      - This is the Github Personal Access Token you created.
 
