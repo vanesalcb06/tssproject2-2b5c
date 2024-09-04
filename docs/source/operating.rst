@@ -13,61 +13,75 @@
 .. tip::
    You must have your [--solutionname--] container running before connecting to the Visualization and Airflow URLs.
 
-.. list-table::
+TSS Docker Run Command
+-----------------------
+This is the TML Solution Studio Docker Run command.  Note for MAC users change amd64 to arm64 in the container name. 
 
-   * - **Type**
-     - **Details**
-     - **Explanation**
-   * - TML Solution Studio Docker Run Command
-     - :ref:`TSS Docker Run Command`
-     - This is the TML Solution Studio Docker Run command.  
+.. important::
+   --tssdockerrun--
 
-       Note for MAC users change amd64 to arm64 in 
+Your Solution Docker Container
+--------------------------
 
-       the container name. 
-   * - Your Solution Docker Container
-     - --dockercontainer--
-     - This is the name of your solution container
-   * - Your Solution Docker Run Command
-     - :ref:`Your Solution Docker Run Command`
-     - This is the Docker Run command for your 
+.. important::
+   --dockercontainer--
 
-       solution container.  Note ports may change at runtime. 
+Your Solution Docker Run Command 
+-----------------------
+This is the Docker Run command for your solution container.  Note ports may change at runtime. The solution documentation will update automatically.
 
-       The solution documentation will update automatically.
-   * - Visualization URL
-     - :ref:`Your Solution Dashboard URL`
-     - This is the visualization URL for your 
+.. important::
+   --dockerrun--
 
-       TML dashboard. Note ports may change at runtime. 
+Your Solution Dashboard URL
+-----------------------
+This is the visualization URL for your TML dashboard. Note ports may change at runtime.  The solution documentation will update automatically.
 
-       The solution documentation will update automatically.
-   * - Solution Airflow URL
-     - --airflowurl--
-     - This is the Airflow URL for your solution container.  
+.. important::
+   --visualizationurl--
 
-       NOTE: While this is provided in the container - you 
+Solution Airflow URL
+----------------
+This is the Airflow URL for your solution container.  NOTE: While this is provided in the container - you should run/schedule solution containerss from the TSS.
 
-       should run/schedule solution containerss from the TSS
-   * - [--solutionname--] Github Repo
-     - --gitrepo--
-     - This is the Github repo for all your solution code
-   * - Readthedocs URL
-     - --readthedocs--
-     - This is this url.
-   * - Solution Trigger DAG
-     - --triggername--
-     - This is the name of the solution DAG you 
+.. important::
+   --airflowurl--
 
-       chose to trigger 
-   * - TML Binaries Listening Ports
-     - :ref:`Your Solution TML Binaries`
-     - These are the ports the TML binaries 
+[--solutionname--] Github Repo
+---------------
+This is the Github repo for all your solution code
 
-       are listening on.
-   * - TMUX Windows
-     - :ref:`Your Solution TMUX Windows`
-     - Your solution is running in these  
+.. important::
+   --gitrepo--
+
+Readthedocs URL
+---------------
+This is this URL.
+
+.. important::
+   --readthedocs--
+
+Solution Trigger DAG
+----------------
+This is the name of the solution DAG you chose to trigger.
+
+.. important::
+   --triggername--
+
+Your Solution TML Binaries 
+-----------------------
+These are the ports the TML binaries are listening on.
+
+.. important::
+   --tmlbinaries--
+
+Your Solution TMUX Windows 
+-----------------------
+
+.. important::
+   --tmuxwindows--
+
+- Your solution is running in these  
 
        TMUX windows:
    
@@ -91,33 +105,3 @@
 
           **CTLR+[**
 
-TSS Docker Run Command
------------------------
-This is the TML Solution Studio Docker Run command.  Note for MAC users change amd64 to arm64 in the container name. 
-
-.. important::
-   --tssdockerrun--
-
-Your Solution Docker Run Command 
------------------------
-
-.. important::
-   --dockerrun--
-
-Your Solution Dashboard URL
------------------------
-
-.. important::
-   --visualizationurl--
-
-Your Solution TML Binaries 
------------------------
-
-.. important::
-   --tmlbinaries--
-
-Your Solution TMUX Windows 
------------------------
-
-.. important::
-   --tmuxwindows--
