@@ -2,7 +2,11 @@
 ====================================
 
 .. important::
-   These are the operating details for your TML solution.
+   These are the operating details for your TML solution.  
+
+   It is important to note that this documentation will 
+
+   dynamically update with the **Runtime Ports** for your solution.
 
 .. tip::
    You must have your [--solutionname--] container running before connecting to the Visualization and Airflow URLs.
