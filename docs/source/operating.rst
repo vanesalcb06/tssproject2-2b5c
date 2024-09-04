@@ -93,6 +93,7 @@
 
 TSS Docker Run Command
 -----------------------
+This is the TML Solution Studio Docker Run command.  Note for MAC users change amd64 to arm64 in the container name. 
 
 .. important::
    --tssdockerrun--
