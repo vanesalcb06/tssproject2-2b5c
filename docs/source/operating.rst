@@ -136,6 +136,12 @@ Your Solution Docker Run Command: Parameter Explanation
        for external data ingestion.  You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
 
        Note: if EXTERNALPORT=-1, TSS will choose a free port randomly.
+
+       This external port is used by Viper binary: Viper will be listening on this port 
+
+       for a connection as shown here: :ref:`Your Solution TML Binaries`
+
+       In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
    * - --containername--
      - Your solution container name. 
 
