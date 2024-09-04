@@ -137,7 +137,7 @@ Your Solution Docker Run Command: Parameter Explanation
 
        Note: if EXTERNALPORT=-1, TSS will choose a free port randomly.
 
-       This external port is used by Viper binary: Viper will be listening on this port 
+       This external port is used by `Viper binary <https://tml.readthedocs.io/en/latest/usage.html>`_: Viper will be listening on this port 
 
        for a connection as shown here: :ref:`Your Solution TML Binaries`
 
