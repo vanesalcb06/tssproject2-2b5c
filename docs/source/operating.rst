@@ -101,7 +101,7 @@ TSS Docker Run Command: Parameter Explanation
      - This is your `Docker Hub <https://hub.docker.com/>`_ username.
    * - \-\-env DOCKERPASSWORD
      - This is your Docker Hub password.
-   * - maadsdocker/tml-solution-studio-with-airflow-amd64
+   * - --tsscontainer--
      - This is the TSS container name for AMD64
 
        If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
@@ -188,7 +188,7 @@ Your Solution Docker Run Command: Parameter Explanation
        for a connection as shown here: :ref:`Your Solution TML Binaries`
 
        In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
-   * - --dockercontainer--
+   * - --justcontainer--
      - Your solution container name. 
 
 Your Solution External Port
