@@ -131,6 +131,16 @@ TSS Docker Run Command: Parameter Explanation
 
     port conflict between applications in DEV and PROD.
 
+    However, if you set all port to -1, TSS will randomly choose
+
+    free ports for you.  The reason for setting the ports with an 
+
+    actual number that is NOT -1, is if you want to scale your TML solution
+
+    with Kubernetes and producing data using REST or gRPC and do not want
+
+    ports to keep changing and breaking your app.
+
 
 Your Solution Airflow Port
 --------------------------
