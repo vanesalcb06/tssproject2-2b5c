@@ -126,6 +126,13 @@ It can be accessed by entering: http://localhost:--solutionairflowport--
 
    particular number.
 
+Your Solution Docker Run Command 
+-----------------------
+This is the Docker Run command for your solution container.  Note ports may change at runtime. The solution documentation will update automatically.
+
+.. important::
+   --dockerrun--
+
 Your Solution Docker Run Command: Parameter Explanation
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -183,13 +190,6 @@ Your Solution Docker Run Command: Parameter Explanation
        In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
    * - --dockercontainer--
      - Your solution container name. 
-
-Your Solution Docker Run Command 
------------------------
-This is the Docker Run command for your solution container.  Note ports may change at runtime. The solution documentation will update automatically.
-
-.. important::
-   --dockerrun--
 
 Your Solution External Port
 -----------------------
