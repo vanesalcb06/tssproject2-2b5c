@@ -74,8 +74,13 @@ TSS Docker Run Command: Parameter Explanation
      - This is the port the Viperviz binary will listen on for connections.
 
        Note: If VIPERVIZPORT=-1, a random free port is selected by TSS.
-   * - \-\-env EXTERNALPORT=--externalport--
-     - This is the external port that will be assigned to your TML solution for external access.
+   * - \-\-env SOLUTIONVIPERVIZPORT
+     - This is the port for **your solution** Viperviz binary connections.
+
+       Note: If SOLUTIONVIPERVIZPORT=-1, a random free port is selected by TSS.
+
+* - \-\-env EXTERNALPORT=--externalport--
+     - This is the external port that will be assigned to your TSS solution for external access.
 
        You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC 
        <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
@@ -87,6 +92,8 @@ TSS Docker Run Command: Parameter Explanation
        for a connection as shown here: :ref:`Your Solution TML Binaries`
 
        In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows`
+   * - \-\-env SOLUTIONEXTERNALPORT=--solutionexternalport--
+     - This is the external port that will be assigned to your TML solution for external access.
    * - \-\-env READTHEDOCS
      - This is the readthedocs API token you created.
 
@@ -105,6 +112,25 @@ TSS Docker Run Command: Parameter Explanation
      - This is the TSS container name for AMD64
 
        If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
+
+.. important
+   Note the difference between the following ports:
+    - AIRFLOWPORT and SOLUTIONAIRFLOWPORT
+    - EXTERNALPORT and SOLUTIONEXTERNALPORT
+    - VIPERVIZPORT and SOLUTIONVIPERVIZPORT
+
+    The reason is because TSS includes a Development environment for TML 
+
+    solutions, many times you will want to run your solution in Dev and run
+
+    it in its own solution container for testing before you deploy your
+
+    solution.  But, since ONLY ONE application can listen on a port, 
+
+    we must assign a different port to the solutions so there is no 
+
+    port conflict between applications in DEV and PROD.
+
 
 Your Solution Airflow Port
 --------------------------
