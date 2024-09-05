@@ -224,12 +224,12 @@ Your Solution Dashboard URL: Parameter Explanation
 
    * - **Parameter**
      - **Explanation**
-   * - http://localhost:<--vipervizport-->/<html file>
+   * - http://localhost:--vipervizport--/<html file>
      - This is the URL pointing to an html file running inside your solution container.
 
        Refer to: `TML Real-time dashboards <https://tml.readthedocs.io/en/latest/dashboards.html>`_
-   * - VIPERVIZPORT
-     - This is the port Viperviz is listening on.
+   * - VIPERVIZPORT=--vipervizport--
+     - This is the port `Viperviz <https://tml.readthedocs.io/en/latest/usage.html>`_ is listening on.
    * - topic
      - This is the topic that the TML binary `Viperviz <https://tml.readthedocs.io/en/latest/usage.html>`_ 
 
