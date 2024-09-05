@@ -64,7 +64,7 @@ TSS Docker Run Command: Parameter Explanation
        http://localhost:--airflowport--
    * - \-\-env SOLUTIONNAME=TSS
      - This is the solution name.
-   * - \-\-env VIPERVIZPORT
+   * - \-\-env VIPERVIZPORT=--vipervizport--
      - This is the port the Viperviz binary will listen on for connections.
 
        Note: If VIPERVIZPORT=-1, a random free port is selected by TSS.
