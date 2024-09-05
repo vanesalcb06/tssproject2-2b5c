@@ -58,7 +58,7 @@ TSS Docker Run Command: Parameter Explanation
        If you are running MAC, use **CHIP=ARM64**
    * - \-\-env TSS=1
      - This is the TSS value and MUST be 1.
-   * - \-\-env AIRFLOWPORT
+   * - \-\-env AIRFLOWPORT=--airflowport--
      - This is the airflow port for TSS.  Connect to TSS from your browser:
 
        http://localhost:--airflowport--
