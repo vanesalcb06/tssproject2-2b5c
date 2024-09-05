@@ -62,23 +62,12 @@ TSS Docker Run Command: Parameter Explanation
      - This is the airflow port for TSS.  Connect to TSS from your browser:
 
        http://localhost:--airflowport--
-   * - \-\-env SOLUTIONAIRFLOWPORT
-     - This is the airflow port for TML solution.  Connect to TSS from your browser:
-
-       http://localhost:--solutionairflowport--
-
-       Note: If SOLUTIONAIRFLOWPORT=-1, then TSS gets a free port randomly.
    * - \-\-env SOLUTIONNAME=TSS
      - This is the solution name.
    * - \-\-env VIPERVIZPORT
      - This is the port the Viperviz binary will listen on for connections.
 
        Note: If VIPERVIZPORT=-1, a random free port is selected by TSS.
-   * - \-\-env SOLUTIONVIPERVIZPORT
-     - This is the port for **your solution** Viperviz binary connections.
-
-       Note: If SOLUTIONVIPERVIZPORT=-1, a random free port is selected by TSS.
-
    * - \-\-env EXTERNALPORT=--externalport--
      - This is the external port that will be assigned to your TSS solution for external access.
 
@@ -92,8 +81,6 @@ TSS Docker Run Command: Parameter Explanation
        for a connection as shown here: :ref:`Your Solution TML Binaries`
 
        In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows`
-   * - \-\-env SOLUTIONEXTERNALPORT=--solutionexternalport--
-     - This is the external port that will be assigned to your TML solution for external access.
    * - \-\-env READTHEDOCS
      - This is the readthedocs API token you created.
 
@@ -112,35 +99,6 @@ TSS Docker Run Command: Parameter Explanation
      - This is the TSS container name for AMD64
 
        If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
-
-.. important::
-   Note the difference between the following ports:
-    - AIRFLOWPORT and SOLUTIONAIRFLOWPORT
-    - EXTERNALPORT and SOLUTIONEXTERNALPORT
-    - VIPERVIZPORT and SOLUTIONVIPERVIZPORT
-
-    The reason is because TSS includes a Development environment for TML 
-
-    solutions, many times you will want to run your solution in Dev and run
-
-    it in its own solution container for testing before you deploy your
-
-    solution.  But, since ONLY ONE application can listen on a port, 
-
-    we must assign a different port to the solutions so there is no 
-
-    port conflict between applications in DEV and PROD.
-
-    However, if you set all port to -1, TSS will randomly choose
-
-    free ports for you.  The reason for setting the ports with an 
-
-    actual number that is NOT -1, is if you want to scale your TML solution
-
-    with Kubernetes and producing data using REST or gRPC and do not want
-
-    ports to keep changing and breaking your app.
-
 
 Your Solution Airflow Port
 --------------------------
@@ -243,6 +201,34 @@ This is the Docker Run command for your solution container.  Note ports may chan
    for a connection as shown here :ref:`Your Solution TML Binaries`
 
    In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
+
+.. important::
+   Note the difference between the following ports:
+    - AIRFLOWPORT and SOLUTIONAIRFLOWPORT
+    - EXTERNALPORT and SOLUTIONEXTERNALPORT
+    - VIPERVIZPORT and SOLUTIONVIPERVIZPORT
+
+    The reason is because TSS includes a Development environment for TML 
+
+    solutions, many times you will want to run your solution in Dev and run
+
+    it in its own solution container for testing before you deploy your
+
+    solution.  But, since ONLY ONE application can listen on a port, 
+
+    we must assign a different port to the solutions so there is no 
+
+    port conflict between applications in DEV and PROD.
+
+    However, if you set all port to -1, TSS will randomly choose
+
+    free ports for you.  The reason for setting the ports with an 
+
+    actual number that is NOT -1, is if you want to scale your TML solution
+
+    with Kubernetes and producing data using REST or gRPC and do not want
+
+    ports to keep changing and breaking your app.
 
 Your Solution Dashboard URL
 -----------------------
