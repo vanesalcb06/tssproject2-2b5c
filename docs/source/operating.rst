@@ -79,7 +79,7 @@ TSS Docker Run Command: Parameter Explanation
 
        Note: If SOLUTIONVIPERVIZPORT=-1, a random free port is selected by TSS.
 
-* - \-\-env EXTERNALPORT=--externalport--
+   * - \-\-env EXTERNALPORT=--externalport--
      - This is the external port that will be assigned to your TSS solution for external access.
 
        You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC 
@@ -113,7 +113,7 @@ TSS Docker Run Command: Parameter Explanation
 
        If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
 
-.. important
+.. important::
    Note the difference between the following ports:
     - AIRFLOWPORT and SOLUTIONAIRFLOWPORT
     - EXTERNALPORT and SOLUTIONEXTERNALPORT
