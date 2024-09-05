@@ -122,6 +122,10 @@ It can be accessed by entering: http://localhost:--solutionairflowport--
 .. important::
    --solutionairflowport--
 
+   Note: This port will change when SOLUTIONAIRFLOWPORT=-1, you can set it to 
+
+   particular number.
+
 Your Solution Docker Run Command: Parameter Explanation
 ^^^^^^^^^^^^^^^^^^^^^^
 
