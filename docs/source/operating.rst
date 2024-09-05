@@ -152,7 +152,7 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the port Viperviz is listening.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
-   * - \-\-env  SOLUTIONAIRFLOWPORT
+   * - \-\-env  SOLUTIONAIRFLOWPORT=--solutionairflowport--
      - This is the port for Airflow in TML solution container.
 
        Note: This is provided mainly for debugging and testing purposes only.
