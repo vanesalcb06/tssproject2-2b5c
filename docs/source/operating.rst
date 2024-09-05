@@ -202,8 +202,12 @@ This is the Docker Run command for your solution container.  Note ports may chan
 
    In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
 
-External vs Solution Ports
+Non-Solution vs Solution Ports
 ^^^^^^^^^^^^^^^^^^^^^^
+
+Non-solution ports are only for TSS, this is because TSS includes a TML Dev environment to allow TML solution developers to test their solutions.
+
+Solution ports are for your TML solution that you created and will deploy.
 
 .. important::
    It is important to note the difference between the following ports:
