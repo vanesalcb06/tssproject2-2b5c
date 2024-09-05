@@ -106,12 +106,6 @@ TSS Docker Run Command: Parameter Explanation
 
        If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
 
-Your Solution Docker Container
---------------------------
-
-.. important::
-   --dockercontainer--
-
 Your Solution Airflow Port
 --------------------------
 
@@ -125,6 +119,12 @@ It can be accessed by entering: http://localhost:--solutionairflowport--
    Note: This port will change when SOLUTIONAIRFLOWPORT=-1, you can set it to 
 
    particular number.
+
+Your Solution Docker Container
+--------------------------
+
+.. important::
+   --dockercontainer--
 
 Your Solution Docker Run Command 
 -----------------------
