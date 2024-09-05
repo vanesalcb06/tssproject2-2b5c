@@ -202,8 +202,11 @@ This is the Docker Run command for your solution container.  Note ports may chan
 
    In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
 
+External vs Solution Ports
+^^^^^^^^^^^^^^^^^^^^^^
+
 .. important::
-   Note the difference between the following ports:
+   It is important to note the difference between the following ports:
     - AIRFLOWPORT and SOLUTIONAIRFLOWPORT
     - EXTERNALPORT and SOLUTIONEXTERNALPORT
     - VIPERVIZPORT and SOLUTIONVIPERVIZPORT
