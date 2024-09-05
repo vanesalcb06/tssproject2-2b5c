@@ -232,11 +232,11 @@ Your Solution External Port
 This is the Docker Run command for your solution container.  Note ports may change at runtime. The solution documentation will update automatically.
 
 .. important::
-   --externalport--
+   --solutionexternalport--
 
    This is the external port that you can use when making an external connection to your TML solution for external data ingestion.  You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
 
-   Note: if EXTERNALPORT=-1, TSS will choose a free port randomly.
+   Note: if SOLUTIONEXTERNALPORT=-1, TSS will choose a free port randomly.
 
    This external port is used by `Viper binary <https://tml.readthedocs.io/en/latest/usage.html>`_: Viper will be listening on this port 
 
@@ -258,11 +258,11 @@ Your Solution Dashboard URL: Parameter Explanation
 
    * - **Parameter**
      - **Explanation**
-   * - http://localhost:--vipervizport--/<html file>
+   * - http://localhost:--solutionvipervizport--/<html file>
      - This is the URL pointing to an html file running inside your solution container.
 
        Refer to: `TML Real-time dashboards <https://tml.readthedocs.io/en/latest/dashboards.html>`_
-   * - VIPERVIZPORT=--vipervizport--
+   * - SOLUTIONVIPERVIZPORT=--solutionvipervizport--
      - This is the port `Viperviz <https://tml.readthedocs.io/en/latest/usage.html>`_ is listening on.
    * - topic
      - This is the topic that the TML binary `Viperviz <https://tml.readthedocs.io/en/latest/usage.html>`_ 
