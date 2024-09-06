@@ -100,6 +100,13 @@ TSS Docker Run Command: Parameter Explanation
 
        If using MAC/Unix use: maadsdocker/tml-solution-studio-with-airflow-arm64
 
+TSS Dashboard URL
+-----------------------
+This is the visualization URL for your TSS dashboard. Note ports may change at runtime.  The solution documentation will update automatically.
+
+.. important::
+   --tssvisualizationurl--
+
 Your Solution Airflow Port
 --------------------------
 
