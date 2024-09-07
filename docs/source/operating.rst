@@ -143,20 +143,6 @@ This is the log file dashboard for your development TML solution running in TSS.
    The solution ports and links below may not work because they will require your to RUN your solution container first.  After, you run your solution container 
    the links and ports will automatically update in the documentation.
 
-Your Solution Airflow Port
---------------------------
-
-This is the airflow port in your solution container.  
-
-It can be accessed by entering: http://localhost:--solutionairflowport--
-
-.. important::
-   --solutionairflowport--
-
-   Note: This port will change when SOLUTIONAIRFLOWPORT=-1, you can set it to 
-
-   particular number.
-
 Your Solution Docker Container
 --------------------------
 
@@ -242,6 +228,20 @@ Your Solution Docker Run Command: Parameter Explanation
        In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
    * - --justcontainer--
      - Your solution container name. 
+
+Your Solution Airflow Port
+--------------------------
+
+This is the airflow port in your solution container.  
+
+It can be accessed by entering: http://localhost:--solutionairflowport--
+
+.. important::
+   --solutionairflowport--
+
+   Note: This port will change when SOLUTIONAIRFLOWPORT=-1, you can set it to 
+
+   particular number.
 
 Your Solution External Port
 -----------------------
