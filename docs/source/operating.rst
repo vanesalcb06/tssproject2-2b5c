@@ -15,6 +15,13 @@
 .. tip::
    You must have your [--solutionname--] container running before connecting to the Visualization and Airflow URLs.
 
+Github Logs
+----------
+This is your main TSS Github logs.  All TSS processes are comitted to Github and logged. 
+
+.. important::
+   --githublogs--
+
 TSS Docker Run Command
 -----------------------
 This is the TML Solution Studio Docker Run command.  Note for MAC users change amd64 to arm64 in the container name. 
@@ -106,6 +113,13 @@ This is the visualization URL for your TSS dashboard. Note ports may change at r
 
 .. important::
    --tssvisualizationurl--
+
+TSS Log File Dashboard
+-----------------------
+This is the log file dashboard for your development TML solution running in TSS.
+
+.. important::
+   --tsslogfile--
 
 Your Solution Airflow Port
 --------------------------
@@ -250,6 +264,13 @@ This is the visualization URL for your TML dashboard. Note ports may change at r
 
 .. important::
    --visualizationurl--
+
+Your Solution Log File Dashboard
+-----------------------
+This is the log file dashboard for your TML solution running.
+
+.. important::
+   --solutionlogfile--
 
 Your Solution Dashboard URL: Parameter Explanation
 ^^^^^^^^^^^^^^^^^^^^^^
