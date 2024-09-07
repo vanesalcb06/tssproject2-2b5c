@@ -4,9 +4,9 @@
 .. note::
    THIS DOCUMENTATION WAS TRIGGERED BY: --tssgen--
 
-   If the documentation was triggered by the TSS - then your solution is running in the TSS Development environment. 
+   If this documentation was triggered by the TSS - then your solution is running in the TSS Development environment. 
 
-   If the documentation was triggered by your TML solution - then your solution is running in your TML solution container. 
+   If this documentation was triggered by your TML solution - then your solution is running in your TML solution container. 
 
 .. important::
    These are the operating details for your TML solution.  
