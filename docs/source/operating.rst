@@ -10,9 +10,9 @@
    If this documentation was triggered by your TML solution - then your solution is running in your TML solution container.  All ports and links will point to 
    your TML solution container.
 
-   If you have NOTHING running - the links and ports below WILL NOT WORK.
+   **If you have NOTHING running - the links and ports below WILL NOT WORK.**
 
-   Also, this documentation is updated by the LATEST run of either the TSS or TML.
+   Also, this documentation is updated by the **LATEST** run of either the TSS or TML.
 
 .. important::
    These are the operating details for your TML solution.  
