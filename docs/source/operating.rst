@@ -17,7 +17,7 @@
 
 Github Logs
 ----------
-This is your main TSS Github logs.  All TSS processes are comitted to Github and logged. 
+This is your main TSS Github logs.  All TSS processes are committed to Github and logged. 
 
 .. important::
    --githublogs--
