@@ -12,6 +12,8 @@
 
    If you have NOTHING running - the links and ports below WILL NOT WORK.
 
+   Also, this documentation is updated by the LATEST run of either the TSS or TML.
+
 .. important::
    These are the operating details for your TML solution.  
 
