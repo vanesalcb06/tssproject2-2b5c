@@ -121,6 +121,13 @@ This is the log file dashboard for your development TML solution running in TSS.
 .. important::
    --tsslogfile--
 
+.. note::
+   It should be noted that your solution is running in the TSS Development Environment. This gives TML developers a very good way to test their TML solutions 
+   before deploying it.
+
+   The solution ports and links below may not work because they will require your to RUN your solution container first.  After, you run your solution container 
+   the links and ports will automatically update in the documentation.
+
 Your Solution Airflow Port
 --------------------------
 
