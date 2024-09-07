@@ -185,6 +185,8 @@ Your Solution Docker Run Command: Parameter Explanation
        Refer to: `Creating Github Token: <https://tml.readthedocs.io/en/latest/docker.html#generating-personal-access-tokens-in-github>`_
    * - \-\-env GITREPOURL
      - This is your Github repo, that you cloned from **https://github.com/smaurice101/raspberrypi**
+   * - \-\-env DOCKERUSERNAME
+     - This is your Docker username.
    * - \-\-env READTHEDOCS
      - This is the readthedocs API token you created.
 
