@@ -195,7 +195,7 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the port Viperviz is listening.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
-   * - \-\-env  VIPERVIZPORT=--solutionvipervizport--
+   * - \-\-env  VIPERVIZPORT=--vipervizport--
      - This is the port Viperviz is listening in TSS.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
