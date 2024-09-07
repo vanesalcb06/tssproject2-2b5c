@@ -195,6 +195,12 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the port Viperviz is listening.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
+   * - \-\-env  VIPERVIZPORT=--solutionvipervizport--
+     - This is the port Viperviz is listening in TSS.  
+
+       You point your browser to this port. See :ref:`Your Solution Dashboard URL`
+   * - \-\-env  AIRFLOWPORT=--airflowport--
+     - This is the port for Airflow in TSS solution studio container.
    * - \-\-env  SOLUTIONAIRFLOWPORT=--solutionairflowport--
      - This is the port for Airflow in TML solution container.
 
@@ -215,6 +221,10 @@ Your Solution Docker Run Command: Parameter Explanation
        Refer to: `Set up readthedocs <https://tml.readthedocs.io/en/latest/readthedocs.html>`_
    * - \-\-env CHIP=--chip--
      - This is the chip family of your OS.
+   * - \-\-env EXTERNALPORT=--externalport--
+     - This is the external port that you can use when making an external 
+    
+       connection to your TML solution running in TSS Dev environment.
    * - \-\-env SOLUTIONEXTERNALPORT=--solutionexternalport--
      - This is the external port that you can use when making an external connection to your TML solution
 
