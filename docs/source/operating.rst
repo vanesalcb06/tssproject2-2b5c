@@ -10,7 +10,7 @@
    If this documentation was triggered by your TML solution - then your solution is running in your TML solution container.  All ports and links will point to 
    your TML solution container.
 
-   **If you have NOTHING running - the links and ports below WILL NOT WORK.**
+   **If you have NOTHING running - most of the links and ports below WILL NOT WORK.**
 
    **If you have BOTH RUNNING - all of the links and ports below WILL WORK.**
 
