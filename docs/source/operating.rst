@@ -4,9 +4,13 @@
 .. note::
    THIS DOCUMENTATION WAS TRIGGERED BY: --tssgen--
 
-   If this documentation was triggered by the TSS - then your solution is running in the TSS Development environment. 
+   If this documentation was triggered by the TSS - then your solution is running in the TSS Development environment.  All ports and links will point to your TSS 
+   development environment.
 
-   If this documentation was triggered by your TML solution - then your solution is running in your TML solution container. 
+   If this documentation was triggered by your TML solution - then your solution is running in your TML solution container.  All ports and links will point to 
+   your TML solution container.
+
+   If you have NOTHING running - the links and ports below WILL NOT WORK.
 
 .. important::
    These are the operating details for your TML solution.  
