@@ -73,6 +73,12 @@ STEP 3: Produce to Kafka Topics
      - --PORT--
    * - IDENTIFIER
      - --IDENTIFIER--
+   * - HTTPADDR
+     - --HTTPADDR--
+   * - CLIENTHOST
+     - --CLIENTHOST--
+   * - CLIENTPORT
+     - --CLIENTPORT--
 
 STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
