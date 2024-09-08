@@ -1,6 +1,8 @@
 Welcome to Transactional Machine Learning (TML) Solution: [--solutionname--] Documentation!
 ===================================
 
+Generated On: --datetime--
+
 --solutiontitle--
 -----------------------
 
