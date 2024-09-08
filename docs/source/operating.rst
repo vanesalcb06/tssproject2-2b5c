@@ -184,7 +184,7 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the port Viperviz is listening.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
-   * - \-\-env CLIENTPORT
+   * - \-\-env CLIENTPORT=--clientport--
      - Use this port if you are externally connecting to the TML/TSS solution using
 
        REST API or gRPC clients.  You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
