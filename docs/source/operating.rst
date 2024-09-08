@@ -1,6 +1,8 @@
 [--solutionname--] Operating Details
 ====================================
 
+Generated On: --datetime--
+
 .. note::
    **THIS DOCUMENTATION CREATION WAS AUTOMATICALLY TRIGGERED BY:** --tssgen--
 
