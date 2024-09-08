@@ -75,8 +75,10 @@ STEP 3: Produce to Kafka Topics
      - --IDENTIFIER--
    * - HTTPADDR
      - --HTTPADDR--
-   * - CLIENTHOST
-     - --CLIENTHOST--
+   * - FROMHOST
+     - --FROMHOST--
+   * - TOHOST
+     - --TOHOST--
    * - CLIENTPORT
      - --CLIENTPORT--
 
