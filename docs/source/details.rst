@@ -1,6 +1,8 @@
 [--solutionname--] Details
 ============================
 
+Generated On: --datetime--
+
 TML Solution DAG Parameters' Details: User Chosen Parametets
 ----------------------------
 
