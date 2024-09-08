@@ -26,7 +26,7 @@ STEP 1: Get TML Core Params: `tml_system_step_1_getparams_dag <https://tml.readt
    * - ingestdatamethod
      - --ingestdatamethod--
  
-STEP 2: Create Kafka Topics: tml_system_step_2_kafka_createtopic_dag
+STEP 2: Create Kafka Topics: `tml_system_step_2_kafka_createtopic_dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-2-create-kafka-topics-tml-system-step-2-kafka-createtopic-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -58,7 +58,7 @@ STEP 2: Create Kafka Topics: tml_system_step_2_kafka_createtopic_dag
    * - prediction_data_topic
      - --prediction_data_topic--
 
-STEP 3: Produce to Kafka Topics
+STEP 3: `Produce to Kafka Topics <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3-produce-to-kafka-topics>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -86,7 +86,7 @@ STEP 3: Produce to Kafka Topics
    * - TML_CLIENTPORT
      - --TMLCLIENTPORT--
 
-STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
+STEP 4: Preprocesing Data: `tml-system-step-4-kafka-preprocess-dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-4-preprocesing-data-tml-system-step-4-kafka-preprocess-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -122,7 +122,7 @@ STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
    * - jsoncriteria
      - --jsoncriteria--
 
-STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning-dag
+STEP 5: Entity Based Machine Learning : `tml-system-step-5-kafka-machine-learning-dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-5-entity-based-machine-learning-tml-system-step-5-kafka-machine-learning-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -164,7 +164,7 @@ STEP 5: Entity Based Machine Learning : tml-system-step-5-kafka-machine-learning
    * - coefsubtopicnames
      - --coefsubtopicnames--
 
-STEP 6: Entity Based Predictions: tml-system-step-6-kafka-predictions-dag
+STEP 6: Entity Based Predictions: `tml-system-step-6-kafka-predictions-dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-6-entity-based-predictions-tml-system-step-6-kafka-predictions-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -196,7 +196,7 @@ STEP 6: Entity Based Predictions: tml-system-step-6-kafka-predictions-dag
    * - pathtoalgos
      - --pathtoalgos--
 
-STEP 7: Real-Time Visualization: tml-system-step-7-kafka-visualization-dag
+STEP 7: Real-Time Visualization: `tml-system-step-7-kafka-visualization-dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-7-real-time-visualization-tml-system-step-7-kafka-visualization-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -218,7 +218,7 @@ STEP 7: Real-Time Visualization: tml-system-step-7-kafka-visualization-dag
    * - rollbackoffset
      - --rollbackoffset--
 
-STEP 8: tml_system_step_8_deploy_solution_to_docker_dag
+STEP 8: `tml_system_step_8_deploy_solution_to_docker_dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-8-deploy-tml-solution-to-docker-tml-system-step-8-deploy-solution-to-docker-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^
 .. list-table::
 
@@ -229,7 +229,7 @@ STEP 8: tml_system_step_8_deploy_solution_to_docker_dag
    * - Docker Run Command
      - --dockerrun--
 
-STEP 9: tml_system_step_9_privategpt_qdrant_dag
+STEP 9: `tml_system_step_9_privategpt_qdrant_dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-9-privategpt-and-qdrant-integration-tml-system-step-9-privategpt-qdrant-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^
 .. list-table::
 
@@ -244,7 +244,7 @@ STEP 9: tml_system_step_9_privategpt_qdrant_dag
    * - Qdrant Run Command
      - --qdrantrun--
 
-STEP 10: tml_system_step_10_documentation_dag
+STEP 10: `tml_system_step_10_documentation_dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-10-create-tml-solution-documentation-tml-system-step-10-documentation-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^
 .. list-table::
 
