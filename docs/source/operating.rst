@@ -184,6 +184,16 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the port Viperviz is listening.  
 
        You point your browser to this port. See :ref:`Your Solution Dashboard URL`
+   * - \-\-env CLIENTPORT
+     - Use this port if you are externally connecting to the TML/TSS solution using
+
+       REST API or gRPC clients.  You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
+
+       This external port is used by `Viper binary <https://tml.readthedocs.io/en/latest/usage.html>`_: Viper will be listening on this port 
+
+       for a connection as shown here: :ref:`Your Solution TML Binaries`
+
+       In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
    * - \-\-env  VIPERVIZPORT=--vipervizport--
      - This is the port Viperviz is listening in TSS.  
 
@@ -217,15 +227,7 @@ Your Solution Docker Run Command: Parameter Explanation
    * - \-\-env SOLUTIONEXTERNALPORT=--solutionexternalport--
      - This is the external port that you can use when making an external connection to your TML solution
 
-       for external data ingestion.  You will need this port in the `REST <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3b-i-rest-api-client>`_, and `gRPC <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-3c-i-grpc-api-client>`_ clients.
-
-       Note: if SOLUTIONEXTERNALPORT=-1, TSS will choose a free port randomly.
-
-       This external port is used by `Viper binary <https://tml.readthedocs.io/en/latest/usage.html>`_: Viper will be listening on this port 
-
-       for a connection as shown here: :ref:`Your Solution TML Binaries`
-
-       In the TMUX window **Viper-produce**: :ref:`Your Solution TMUX Windows` 
+       for external data ingestion.  if SOLUTIONEXTERNALPORT=-1, TSS selects a free port randomly.
    * - --justcontainer--
      - Your solution container name. 
 
