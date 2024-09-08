@@ -81,6 +81,10 @@ STEP 3: Produce to Kafka Topics
      - --TOHOST--
    * - CLIENTPORT
      - --CLIENTPORT--
+   * - TSS_CLIENTPORT
+     - --TSSCLIENTPORT--
+   * - TML_CLIENTPORT
+     - --TMLCLIENTPORT--
 
 STEP 4: Preprocesing Data: tml-system-step-4-kafka-preprocess-dag
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
