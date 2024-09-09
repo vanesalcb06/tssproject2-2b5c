@@ -1,7 +1,7 @@
 [--solutionname--] Operating Details
 ====================================
 
-Generated On: --datetime--
+Generated On: --datetime-- UTC
 
 .. note::
    **THIS DOCUMENTATION CREATION WAS AUTOMATICALLY TRIGGERED BY:** --tssgen--
