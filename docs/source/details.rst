@@ -1,7 +1,7 @@
 [--solutionname--] Details
 ============================
 
-Generated On: --datetime--
+Generated On: --datetime-- UTC
 
 TML Solution DAG Parameters' Details: User Chosen Parametets
 ----------------------------
