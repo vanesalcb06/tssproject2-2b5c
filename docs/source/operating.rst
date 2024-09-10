@@ -238,6 +238,14 @@ Your Solution Docker Run Command: Parameter Explanation
      - This is the external port that you can use when making an external connection to your TML solution
 
        for external data ingestion.  if SOLUTIONEXTERNALPORT=-1, TSS selects a free port randomly.
+   * - \-\-env MQTTUSERNAME
+     - This is your MQTT username
+   * - \-\-env MQTTPASSWORD
+     - This is your MQTT password.
+   * - \-\-env KAFKACLOUDUSERNAME
+     - This is your API key from Confluent Cloud
+   * - \-\-env KAFKACLOUDPASSWORD
+     - This is your API Secret from Confluent Cloud.
    * - --justcontainer--
      - Your solution container name. 
 
