@@ -119,6 +119,10 @@ TSS Docker Run Command: Parameter Explanation
      - This is your `Docker Hub <https://hub.docker.com/>`_ username.
    * - \-\-env DOCKERPASSWORD
      - This is your Docker Hub password.
+   * - \-\-env MQTTUSERNAME
+     - This is your MQTT username
+   * - \-\-env MQTTPASSWORD
+     - This is your MQTT password.
    * - --tsscontainer--
      - This is the TSS container name for AMD64
 
