@@ -123,6 +123,10 @@ TSS Docker Run Command: Parameter Explanation
      - This is your MQTT username
    * - \-\-env MQTTPASSWORD
      - This is your MQTT password.
+   * - \-\-env KAFKACLOUDUSERNAME
+     - This is your API key from Confluent Cloud
+   * - \-\-env KAFKACLOUDPASSWORD
+     - This is your API Secret from Confluent Cloud.
    * - --tsscontainer--
      - This is the TSS container name for AMD64
 
