@@ -245,6 +245,8 @@ STEP 7: Real-Time Visualization: `tml-system-step-7-kafka-visualization-dag <htt
      - --vipervizport--
    * - topic
      - --topic--
+   * - dashboardhtml
+     - --dashboardhtml--
    * - secure
      - --secure--
    * - offset
