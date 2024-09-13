@@ -276,13 +276,35 @@ STEP 9: `tml_system_step_9_privategpt_qdrant_dag <https://tml.readthedocs.io/en/
    * - **User Parameter**
      - **Chosen Value**
    * - PrivateGPT Container
-     - --privategptcontainer--
+     - --pgptcontainername--
    * - PrivateGPT Run Command
      - --privategptrun--
    * - Qdrant Container
      - --qdrantcontainer--
    * - Qdrant Run Command
      - --qdrantrun--
+   * - Consumefrom
+     - --consumefrom--
+   * - pgpt_data_topic
+     - --pgpt_data_topic--
+   * - offset
+     - --offset--
+   * - rollbackoffset
+     - --rollbackoffset--
+   * - topicid
+     - --topicid--
+   * - enabletls
+     - --enabletls--
+   * - partition
+     - --partition--
+   * - prompt
+     - --prompt--
+   * - context
+     - --context--
+   * - jsonkeytogather
+     - --jsonkeytogather--
+   * - keyattribute
+     - --keyattribute--
 
 STEP 10: `tml_system_step_10_documentation_dag <https://tml.readthedocs.io/en/latest/tmlbuilds.html#step-10-create-tml-solution-documentation-tml-system-step-10-documentation-dag>`_
 ^^^^^^^^^^^^^^^^^^^^^
