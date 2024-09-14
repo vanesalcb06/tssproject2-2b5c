@@ -305,6 +305,8 @@ STEP 9: `tml_system_step_9_privategpt_qdrant_dag <https://tml.readthedocs.io/en/
      - --jsonkeytogather--
    * - keyattribute
      - --keyattribute--
+   * - keyprocesstype
+     - --keyprocesstype--
    * - vectordbcollectionname
      - --vectordbcollectionname--
    * - concurrency
