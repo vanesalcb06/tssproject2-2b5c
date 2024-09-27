@@ -181,6 +181,8 @@ STEP 5: Entity Based Machine Learning : `tml-system-step-5-kafka-machine-learnin
      - --networktimeout--
    * - modelsearchtuner
      - --modelsearchtuner--
+   * - processlogic
+     - --processlogic--
    * - dependentvariable
      - --dependentvariable--
    * - independentvariables
