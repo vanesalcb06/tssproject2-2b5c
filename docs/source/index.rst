@@ -21,3 +21,4 @@ Contents
    operating
    details
    usage
+   logs
