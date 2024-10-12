@@ -249,6 +249,20 @@ Your Solution Docker Run Command: Parameter Explanation
    * - --justcontainer--
      - Your solution container name. 
 
+Your Solution Airflow Port
+--------------------------
+
+This is the airflow port in your solution container.  
+
+It can be accessed by entering: http://localhost:--airflowport--
+
+.. important::
+   --airflowport--
+
+   Note: This port will change when SOLUTIONAIRFLOWPORT=-1, you can set it to 
+
+   particular number.
+
 Your Solution External Port
 -----------------------
 This is the Docker Run command for your solution container.  Note ports may change at runtime. The solution documentation will update automatically.
