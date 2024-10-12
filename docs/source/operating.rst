@@ -120,7 +120,7 @@ TSS Docker Run Command: Parameter Explanation
    * - \-\-env DOCKERPASSWORD
      - This is your Docker Hub password.
    * - \-\-env MQTTUSERNAME
-     - This is your MQTT username
+     - This is your MQTT username. See `Set up HiveMQ <https://tml.readthedocs.io/en/latest/hive.html>`_
    * - \-\-env MQTTPASSWORD
      - This is your MQTT password.
    * - \-\-env KAFKACLOUDUSERNAME
