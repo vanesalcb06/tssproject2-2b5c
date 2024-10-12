@@ -114,7 +114,7 @@ TSS Docker Run Command: Parameter Explanation
    * - \-\-env GITPASSWORD
      - This is the Github Personal Access Token you created.
 
-       Refer to: `Creating Github Token: <https://tml.readthedocs.io/en/latest/docker.html#generating-personal-access-tokens-in-github>`_
+       Refer to: `Creating Github Token: <https://tml.readthedocs.io/en/latest/gitsetup.html>`_
    * - \-\-env DOCKERUSERNAME
      - This is your `Docker Hub <https://hub.docker.com/>`_ username.
    * - \-\-env DOCKERPASSWORD
