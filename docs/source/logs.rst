@@ -1,6 +1,8 @@
 Latest Logs From Latest Build
 ==============================
 
+Generated On: --datetime-- UTC
+
 These are the latest logs generated from your latest build.  
 
 .. tip:: 
