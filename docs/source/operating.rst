@@ -139,6 +139,13 @@ This is the visualization URL for your TSS dashboard. Note ports may change at r
 .. important::
    --tssvisualizationurl--
 
+TSS Airflow Port
+--------------------------
+
+This is the airflow port in your TSS solution container.  
+
+It can be accessed by entering: http://localhost:--airflowport--
+
 TSS Log File Dashboard
 -----------------------
 This is the log file dashboard for your development TML solution running in TSS.
@@ -254,10 +261,10 @@ Your Solution Airflow Port
 
 This is the airflow port in your solution container.  
 
-It can be accessed by entering: http://localhost:--airflowport--
+It can be accessed by entering: http://localhost:--solutionairflowport--
 
 .. important::
-   --airflowport--
+   --solutionairflowport--
 
    Note: This port will change when SOLUTIONAIRFLOWPORT=-1, you can set it to 
 
