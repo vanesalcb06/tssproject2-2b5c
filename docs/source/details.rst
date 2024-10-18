@@ -220,7 +220,7 @@ STEP 6: Entity Based Predictions: `tml-system-step-6-kafka-predictions-dag <http
    * - inputdata
      - --inputdata--
    * - consumefrom
-     - --consumefrom--
+     - --consumefrom2--
    * - offset
      - --offset--
    * - delay
