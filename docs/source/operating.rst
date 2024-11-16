@@ -176,6 +176,8 @@ This is the Docker Run command for your solution container.  Note ports may chan
 .. tip::
    Use the above Docker Run command to run your solution.  **Make sure to UPDATE the GITPASSWORD and READTHEDOCS parameters.** 
 
+   Optionally, if using Kafka Cloud then enter KAFKACLOUDPASSWORD.
+
 Your Solution Docker Run Command: Parameter Explanation
 ^^^^^^^^^^^^^^^^^^^^^^
 
