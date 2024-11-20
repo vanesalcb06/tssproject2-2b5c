@@ -21,4 +21,5 @@ Contents
    operating
    details
    usage
+   kube
    logs
