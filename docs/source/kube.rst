@@ -6,6 +6,8 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
 .. tip::
    Refer to TML documentation for more information on `scaling with Kubernetes <https://tml.readthedocs.io/en/latest/kube.html>`_.
 
+   You can also run the YAML files locally in a 1 node kubernetes cluster called minikube.  Refer to `Installing minikube <https://tml.readthedocs.io/en/latest/kube.html#installing-minikube>`_
+
 .. important:: 
    Below assumes you have a Kubernetes cluster and **kubectl** installed in your Linux environment.
 
