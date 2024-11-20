@@ -19,7 +19,7 @@ Based on your TML solution [--solutionname--] - if you want to scale your applic
 mysql-storage.yml
 ------------------------
 
-.. code-block:: 
+.. code-block:: YAML
 
       apiVersion: v1
       kind: PersistentVolume
