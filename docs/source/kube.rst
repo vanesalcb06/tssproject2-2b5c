@@ -193,7 +193,7 @@ privategpt.yml (Optional If Step 9 Dag is used)
         selector:
           app: privategpt
           
-qdrant.yml (Optional If Step 9 Dag is used and WEB_CONCURRENCY > 1)
+qdrant.yml (Optional If Step 9 Dag is used and WEB_CONCURRENCY > 1 in privategpt.yml)
 ---------------
 
 .. important::
