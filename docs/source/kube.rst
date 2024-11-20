@@ -17,6 +17,7 @@ Based on your TML solution [--solutionname--] - if you want to scale your applic
    Copy and Paste this YAML file: --solutionnamefile-- - and save it locally.
 
 .. code-block:: YAML
+
    --solutionnamecode--
 
 mysql-storage.yml
