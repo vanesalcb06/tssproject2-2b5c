@@ -118,3 +118,77 @@ mysql-db-deployment.yml
         - port: 3306
         selector:
           app: mysql
+
+privategpt.yml
+---------------
+
+.. important::
+   Copy and Paste this YAML file: privategpt.yml - and save it locally.
+
+.. note::
+   By default this assumes you have a Nvidia GPU in your machine and so it using the Nvidia privateGPT container:
+
+    **image: maadsdocker/tml-privategpt-with-gpu-nvidia-amd64**
+
+   if you DO NOT have a Nvidia GPU installed then change image to:
+
+    **image: maadsdocker/tml-privategpt-no-gpu-amd64**
+
+.. code-block:: YAML
+
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: privategpt
+      spec:
+        selector:
+          matchLabels:
+            app: privategpt
+        replicas: 1 # tells deployment to run 1 pods matching the template
+        template:
+          metadata:
+            labels:
+              app: privategpt
+          spec:
+            #hostNetwork: true
+            containers:
+            - name: privategpt
+              image: maadsdocker/tml-privategpt-with-gpu-nvidia-amd64 # IF you DO NOT have NVIDIA GPU use: maadsdocker/tml-privategpt-no-gpu-amd64
+             # resources:
+              #  limits:
+               #   nvidia.com/gpu: 1 # requesting 1 GPU        
+              ports:   
+              - containerPort: 8001
+              env:
+              - name: NVIDIA_VISIBLE_DEVICES 
+                value: all
+              - name: DP_DISABLE_HEALTHCHECKS
+                value: xids
+              - name: WEB_CONCURRENCY
+                value: "1"
+              - name: GPU
+                value: "1"          
+              - name: COLLECTION
+                value: "tml"  
+              - name: PORT
+                value: "8001"  
+              - name: CUDA_VISIBLE_DEVICES
+                value: "0"  
+               
+      ---
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: privategpt
+        labels:
+          app: privategpt
+      spec:
+        type: NodePort #Exposes the service as a node ports
+        ports:
+        - port: 8001
+          name: p1
+          protocol: TCP
+          targetPort: 8001
+        selector:
+          app: privategpt
+          
