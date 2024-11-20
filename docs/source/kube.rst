@@ -6,6 +6,9 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
 .. tip::
    Refer to TML documentation for more information on `scaling with Kubernetes <https://tml.readthedocs.io/en/latest/kube.html>`_.
 
+.. important:: 
+   Below assumes you have a Kubernetes cluster and **kubectl** installed in your Linux environment.
+
 Based on your TML solution [--solutionname--] - if you want to scale your application with Kubernetes - you will need to apply the following YAML files.
 
 --yamlfiles--
