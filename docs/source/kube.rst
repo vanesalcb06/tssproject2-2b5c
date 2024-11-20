@@ -23,7 +23,6 @@ kubectl apply command
 
    --kubectl--
 
-Here is your 
 --solutionnamefile--
 ------------------------
 
