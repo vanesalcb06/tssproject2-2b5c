@@ -50,7 +50,7 @@ kubectl apply command
 .. important::
    To apply the YAML files below to your Kubernetes cluster simply run this command:
 
-.. code-block::
+.. code-block:: YAML
 
    --kubectl--
 
