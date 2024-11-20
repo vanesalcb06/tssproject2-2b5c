@@ -13,7 +13,36 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
 
 Based on your TML solution [--solutionname--] - if you want to scale your application with Kubernetes - you will need to apply the following YAML files.
 
---yamlfiles--
+.. list-table::
+
+   * - **YML File**
+     - **Description**
+   * - :ref:`--solutionnamefile--`
+     - This is your main solution YAML file.  
+ 
+       It must be applied to your Kubernetes cluster.
+   * - :ref:`mysql-storage.yml`
+     - This is storage allocation for MySQL DB.
+ 
+       It must be applied to your Kubernetes cluster.
+   * - :ref:`mysql-db-deployment.yml`
+     - This is the MySQL deployment YAML.
+ 
+       It must be applied to your Kubernetes cluster.
+   * - :ref:`privategpt.yml`
+     - This is the privateGPT deployment YAML.
+ 
+       This is OPTIONAL.  However, it must be 
+ 
+       applied if using Step 9 DAG.
+   * - :ref:`qdrant.yml`
+     - This is the Qdrant deployment YAML.
+ 
+       This is OPTIONAL.  However, it must be 
+ 
+       applied if using Step 9 DAG and
+
+       WEB_CONCURRENCY > 1, in the privategpt.yml.
 
 kubectl apply command
 -----------------
