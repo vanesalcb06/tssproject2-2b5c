@@ -10,3 +10,39 @@ Based on your TML solution [--solutionname--] - if you want to scale your applic
 
 --yamlfiles--
 
+--solutionnamefile--
+------------------------
+
+.. code-block:: YAML
+   --solutionnamecode--
+
+mysql-storage.yml
+------------------------
+
+.. code-block:: YAML
+      apiVersion: v1
+      kind: PersistentVolume
+      metadata:
+        name: mysql-pv-volume
+        labels:
+          type: local
+      spec:
+        storageClassName: manual
+        capacity:
+          storage: 20Gi
+        accessModes:
+          - ReadWriteOnce
+        hostPath:
+          path: "/mnt/data"
+      ---
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      metadata:
+        name: mysql-pv-claim
+      spec:
+        storageClassName: manual
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 20Gi
