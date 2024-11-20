@@ -120,7 +120,7 @@ mysql-db-deployment.yml
         selector:
           app: mysql
 
-privategpt.yml
+privategpt.yml (Optional If Step 9 Dag is used)
 ---------------
 
 .. important::
@@ -192,4 +192,56 @@ privategpt.yml
           targetPort: 8001
         selector:
           app: privategpt
+          
+qdrant.yml (Optional If Step 9 Dag is used and WEB_CONCURRENCY > 1)
+---------------
+
+.. important::
+   Copy and Paste this YAML file: qdrant.yml - and save it locally.
+
+.. code-block:: YAML
+
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: qdrant
+      spec:
+        selector:
+          matchLabels:
+            app: qdrant
+        replicas: 1 
+        template:
+          metadata:
+            labels:
+              app: qdrant
+          spec:
+            #hostNetwork: true
+            containers:
+            - name: qdrant
+              image: qdrant/qdrant 
+              ports:   
+              - containerPort: 6333
+              volumeMounts:
+              - mountPath: /qdrant/storage
+                name: qdata
+            volumes:
+            - name: qdata
+              hostPath:
+                path: /qdrant_storage          
+      ---
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: qdrant
+        labels:
+          app: qdrant
+      spec:
+        type: NodePort #Exposes the service as a node ports
+        ports:
+        - port: 6333
+          name: p1
+          protocol: TCP
+          targetPort: 6333
+        selector:
+          app: qdrant
           
