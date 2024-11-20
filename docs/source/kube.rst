@@ -20,15 +20,15 @@ Based on your TML solution [--solutionname--] - if you want to scale your applic
    * - :ref:`--solutionnamefile--`
      - This is your main solution YAML file.  
  
-       It must be applied to your Kubernetes cluster.
+       It MUST be applied to your Kubernetes cluster.
    * - :ref:`mysql-storage.yml`
      - This is storage allocation for MySQL DB.
  
-       It must be applied to your Kubernetes cluster.
+       It MUST be applied to your Kubernetes cluster.
    * - :ref:`mysql-db-deployment.yml`
      - This is the MySQL deployment YAML.
  
-       It must be applied to your Kubernetes cluster.
+       It MUST be applied to your Kubernetes cluster.
    * - :ref:`privategpt.yml`
      - This is the privateGPT deployment YAML.
  
