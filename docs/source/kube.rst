@@ -15,6 +15,15 @@ Based on your TML solution [--solutionname--] - if you want to scale your applic
 
 --yamlfiles--
 
+kubectl apply command
+-----------------
+
+.. important::
+   To apply the YAML files below to your Kubernetes cluster simply run this command:
+
+   --kubectl--
+
+Here is your 
 --solutionnamefile--
 ------------------------
 
