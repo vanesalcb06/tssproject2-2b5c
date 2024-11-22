@@ -62,6 +62,7 @@ kubectl apply command
 
 .. code-block:: YAML
 
+   ################# --solutionnamefile--
    --solutionnamecode--
 
 mysql-storage.yml
@@ -72,6 +73,7 @@ mysql-storage.yml
 
 .. code-block:: YAML
 
+      ################# mysql-storage.yml
       apiVersion: v1
       kind: PersistentVolume
       metadata:
@@ -106,7 +108,7 @@ mysql-db-deployment.yml
    Copy and Paste this YAML file: mysql-db-deployment.yml - and save it locally.
 
 .. code-block:: YAML
-
+      ################# mysql-db-deployment.yml
       apiVersion: apps/v1
       kind: Deployment
       metadata:
@@ -181,6 +183,7 @@ privategpt.yml (Optional If Step 9 Dag is used)
 
 .. code-block:: YAML
 
+      ################# privategpt.yml
       apiVersion: apps/v1
       kind: Deployment
       metadata:
@@ -245,6 +248,7 @@ qdrant.yml (Optional If Step 9 Dag is used and WEB_CONCURRENCY > 1 in privategpt
 
 .. code-block:: YAML
 
+      ################# qdrant.yml
       apiVersion: apps/v1
       kind: Deployment
       metadata:
