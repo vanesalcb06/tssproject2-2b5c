@@ -110,6 +110,7 @@ mysql-db-deployment.yml
    Copy and Paste this YAML file: mysql-db-deployment.yml - and save it locally.
 
 .. code-block:: YAML
+
       ################# mysql-db-deployment.yml
       apiVersion: apps/v1
       kind: Deployment
