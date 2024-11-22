@@ -300,3 +300,17 @@ qdrant.yml
         selector:
           app: qdrant
           
+.. tip::
+   The number of replicas can be changed in the **cybersecuritywithprivategpt-3f10.yml** file: look for **replicas**.  You can increase or decrease the number of replicas based on the amout of real-time data you are processing.
+
+   To inside the pods, you can type command: 
+
+    COMMAND: **kubectl exec -it <pod name> \-\- bash** (replace <pod name> with actual pod name)
+
+   To delete the pods type:
+
+    COMMAND: **kubectl delete all \-\-all \-\-all-namespaces**
+
+   To get information on a pod type:
+
+    COMMAND: **kubectl describe pod <pod name>** (replace <pod name> with actual pod name)
