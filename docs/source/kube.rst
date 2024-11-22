@@ -166,8 +166,11 @@ mysql-db-deployment.yml
         selector:
           app: mysql
 
-privategpt.yml (Optional If Step 9 Dag is used)
+privategpt.yml
 ---------------
+
+.. note::
+    This YAML is Optional - Use Only If Step 9 Dag is used
 
 .. important::
    Copy and Paste this YAML file: privategpt.yml - and save it locally.
@@ -240,8 +243,11 @@ privategpt.yml (Optional If Step 9 Dag is used)
         selector:
           app: privategpt
           
-qdrant.yml (Optional If Step 9 Dag is used and WEB_CONCURRENCY > 1 in privategpt.yml)
+qdrant.yml
 ---------------
+
+.. note::
+    This YAML is Optional - Use Only If Step 9 Dag is used
 
 .. important::
    Copy and Paste this YAML file: qdrant.yml - and save it locally.
