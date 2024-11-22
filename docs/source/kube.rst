@@ -42,9 +42,7 @@ Based on your TML solution [--solutionname--] - if you want to scale your applic
  
        This is OPTIONAL.  However, it must be 
  
-       applied if using Step 9 DAG and
-
-       WEB_CONCURRENCY > 1, in the privategpt.yml.
+       applied if using Step 9 DAG.
 
 kubectl apply command
 -----------------
