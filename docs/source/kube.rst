@@ -67,7 +67,7 @@ kubectl apply command
    ################# --solutionnamefile--
    --solutionnamecode--
 
-mysql-storage
+mysql-storage.yml
 ------------------------
 
 .. important::
@@ -103,7 +103,7 @@ mysql-storage
           requests:
             storage: 20Gi
 
-mysql-db-deployment
+mysql-db-deployment.yml
 ------------------------
 
 .. important::
@@ -169,7 +169,7 @@ mysql-db-deployment
         selector:
           app: mysql
 
-privategpt
+privategpt.yml
 ---------------
 
 .. note::
@@ -246,7 +246,7 @@ privategpt
         selector:
           app: privategpt
           
-qdrant
+qdrant.yml
 ---------------
 
 .. note::
