@@ -189,7 +189,6 @@ privategpt.yml
 
 .. code-block:: YAML
 
-      ################# privategpt.yml
       apiVersion: apps/v1
       kind: Deployment
       metadata:
@@ -208,9 +207,9 @@ privategpt.yml
             containers:
             - name: privategpt
               image: maadsdocker/tml-privategpt-with-gpu-nvidia-amd64 # IF you DO NOT have NVIDIA GPU use: maadsdocker/tml-privategpt-no-gpu-amd64
-             # resources:
-              #  limits:
-               #   nvidia.com/gpu: 1 # requesting 1 GPU        
+              volumeMounts:
+              - name: dockerpath
+                mountPath: /var/run/docker.sock
               ports:   
               - containerPort: 8001
               env:
@@ -228,7 +227,13 @@ privategpt.yml
                 value: "8001"  
               - name: CUDA_VISIBLE_DEVICES
                 value: "0"  
-               
+              - name: TSS
+                value: "0"  
+            volumes:
+            - name: dockerpath
+              hostPath:
+                path: /var/run/docker.sock
+         
       ---
       apiVersion: v1
       kind: Service
@@ -245,6 +250,7 @@ privategpt.yml
           targetPort: 8001
         selector:
           app: privategpt
+          
           
 qdrant.yml
 ---------------
