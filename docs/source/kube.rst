@@ -60,6 +60,8 @@ kubectl apply command
 .. important::
    Copy and Paste this YAML file: --solutionnamefile-- - and save it locally.
 
+   Also, MAKE SURE to update any tokens and passwords in this file.
+
 .. code-block:: YAML
 
    ################# --solutionnamefile--
