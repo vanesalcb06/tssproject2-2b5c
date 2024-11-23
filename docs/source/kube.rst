@@ -162,7 +162,7 @@ mysql-db-deployment.yml
       apiVersion: v1
       kind: Service
       metadata:
-        name: mysql
+        name: mysql-service
       spec:
         ports:
         - port: 3306
@@ -238,9 +238,9 @@ privategpt.yml
       apiVersion: v1
       kind: Service
       metadata:
-        name: privategpt
+        name: privategpt-service
         labels:
-          app: privategpt
+          app: privategpt-service
       spec:
         type: NodePort #Exposes the service as a node ports
         ports:
@@ -295,9 +295,9 @@ qdrant.yml
       apiVersion: v1
       kind: Service
       metadata:
-        name: qdrant
+        name: qdrant-service
         labels:
-          app: qdrant
+          app: qdrant-service
       spec:
         type: NodePort #Exposes the service as a node ports
         ports:
