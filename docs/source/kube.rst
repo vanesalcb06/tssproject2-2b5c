@@ -238,7 +238,7 @@ privategpt.yml
               nameservers:
                 - 8.8.8.8      
          
-   ---
+      ---
       apiVersion: v1
       kind: Service
       metadata:
