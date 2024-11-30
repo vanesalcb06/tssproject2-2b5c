@@ -203,13 +203,12 @@ privategpt.yml
             labels:
               app: privategpt
           spec:
-            #hostNetwork: true
             containers:
             - name: privategpt
               image: maadsdocker/tml-privategpt-with-gpu-nvidia-amd64 # IF you DO NOT have NVIDIA GPU use: maadsdocker/tml-privategpt-no-gpu-amd64
-              volumeMounts:
-              - name: dockerpath
-                mountPath: /var/run/docker.sock
+              resources:             # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+                limits:              # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+                  nvidia.com/gpu: 1  # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
               ports:   
               - containerPort: 8001
               env:
@@ -218,7 +217,7 @@ privategpt.yml
               - name: DP_DISABLE_HEALTHCHECKS
                 value: xids
               - name: WEB_CONCURRENCY
-                value: "1"
+                value: "3"
               - name: GPU
                 value: "1"          
               - name: COLLECTION
@@ -229,15 +228,8 @@ privategpt.yml
                 value: "0"  
               - name: TSS
                 value: "0"  
-            volumes:
-            - name: dockerpath
-              hostPath:
-                path: /var/run/docker.sock
-            dnsPolicy: "None"
-            dnsConfig:
-              nameservers:
-                - 8.8.8.8      
-         
+              - name: KUBE
+                value: "1"            
       ---
       apiVersion: v1
       kind: Service
@@ -254,7 +246,7 @@ privategpt.yml
           targetPort: 8001
         selector:
           app: privategpt
-          
+                    
           
 qdrant.yml
 ---------------
