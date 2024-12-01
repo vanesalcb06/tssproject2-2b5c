@@ -391,6 +391,12 @@ Start minikube with NO GPU:
 
    minikube start --driver docker --container-runtime docker --cni calico --memory 8192
 
+DELETE minikube:
+
+.. code-block::
+
+   minikube delete
+
 .. tip::
 
    Adjust the **\-\-memory 8192** as needed.
