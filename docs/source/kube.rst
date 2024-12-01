@@ -67,15 +67,14 @@ kubectl apply command
           - name: GITPASSWORD (MANDATORY)
              value: '<ENTER GITHUB PASSWORD>'
 
+          - name: READTHEDOCS (MANDATORY)
+             value: '<ENTER READTHEDOCS TOKEN>'
+
           - name: KAFKACLOUDPASSWORD (OPTIONAL)
              value: '<Enter API secret>'
 
           - name: MQTTPASSWORD (OPTIONAL)
              value: '<ENTER MQTT PASSWORD>'
-          
-          - name: READTHEDOCS (MANDATORY)
-             value: '<ENTER READTHEDOCS TOKEN>'
-
 
 .. code-block:: YAML
 
