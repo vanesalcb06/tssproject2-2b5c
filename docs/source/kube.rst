@@ -321,7 +321,21 @@ qdrant.yml
 .. tip::
    The number of replicas can be changed in the **cybersecuritywithprivategpt-3f10.yml** file: look for **replicas**.  You can increase or decrease the number of replicas based on the amout of real-time data you are processing.
 
-   To inside the pods, you can type command: 
+Kubernets Dashboard Visualization
+----------------------------------
+
+To visualize the dashboard you need to forward ports to your solution deployment in Kubernetes.  For this solution it would be:
+
+.. code-block::
+
+   --kube-portforward--
+
+After you forward the ports then run the viusalization URL as usual.
+
+Kubernetes Pod Access
+---------------------
+
+   To go inside the pods, you can type command: 
 
     COMMAND: **kubectl exec -it <pod name> \-\- bash** (replace <pod name> with actual pod name)
 
