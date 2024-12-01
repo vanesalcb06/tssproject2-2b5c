@@ -83,7 +83,7 @@ kubectl apply command
 
 .. tip::
 
-   In the solution YAML file above, you can adjust the **replicas** field.  Currently, **replicas: 3** for demonstartion purposes. 
+   In the solution YAML file above, you can adjust the **replicas** field.  Currently, **replicas: 3** for demonstration purposes. 
 
 mysql-storage.yml
 ------------------------
