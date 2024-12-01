@@ -324,13 +324,17 @@ qdrant.yml
 Kubernets Dashboard Visualization
 ----------------------------------
 
-To visualize the dashboard you need to forward ports to your solution deployment in Kubernetes.  For this solution it would be:
+To visualize the dashboard you need to forward ports to your solution **deployment in Kubernetes**.  For this solution, the port forward command would be:
 
 .. code-block::
 
    --kube-portforward--
 
-After you forward the ports then run the viusalization URL as usual.
+After you forward the ports then copy/paste the viusalization URL below and run your dashboard.
+
+.. code-block::
+
+   --visualizationurl--
 
 Kubernetes Pod Access
 ---------------------
