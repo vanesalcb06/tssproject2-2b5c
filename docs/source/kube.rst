@@ -242,6 +242,7 @@ privategpt.yml
             containers:
             - name: privategpt
               image: maadsdocker/tml-privategpt-with-gpu-nvidia-amd64 # IF you DO NOT have NVIDIA GPU use: maadsdocker/tml-privategpt-no-gpu-amd64
+              imagePullPolicy: IfNotPresent
               resources:             # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
                 limits:              # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
                   nvidia.com/gpu: 1  # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
