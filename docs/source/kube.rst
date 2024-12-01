@@ -352,7 +352,11 @@ Kubernetes Pod Access
     COMMAND: **kubectl describe pod <pod name>** (replace <pod name> with actual pod name)
 
    Start minikube with GPU:
-     COMMAND: **minikube start –driver docker \-\-container-runtime docker \-\-gpus all**
+     COMMAND: **/minikube start \-\-driver docker \-\-container-runtime docker \-\-gpus all \-\-cni calico \-\-memory 8192**
 
    Start minikube with NO GPU:
-     COMMAND: **minikube start –driver docker**
+     COMMAND: **minikube start \-\-driver docker \-\-container-runtime docker \-\-cni calico \-\-memory 8192**
+
+.. tip::
+
+   Adjust the **\-\-memory 8192** as needed.
