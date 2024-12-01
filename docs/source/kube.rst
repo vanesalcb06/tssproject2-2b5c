@@ -375,9 +375,10 @@ Note: replace **<pod name>** with actual pod name..use this command to get the p
 
 .. important::
 
-   The above command instructs Kubernetes to scale pods based on 50% CPU utilization to a minimum number of pods of 1 (small workload) to a maximum of 100 pods for large world loads.  
+   The above command instructs Kubernetes to scale pods based on 50% CPU utilization to a minimum number of pods of 1 (small workload) to a maximum of 100 pods for large world loads.  Of 
+   course, you can easily change these min and max numbers.
    
-   This is auto-scaling is very important to scale up and down your solution, while efficiently managing cloud computing costs.
+   This auto-scaling is very important to scale up and down your solution, while efficiently managing cloud computing costs.
 
 **To list deployments being auto-scaled type:**
 
