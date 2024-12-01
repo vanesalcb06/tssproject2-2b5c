@@ -365,7 +365,7 @@ To list deployment pods type:
 
 To delete the pods:
 
--- code-block::
+.. code-block::
 
    kubectl delete all --all --all-namespaces
 
