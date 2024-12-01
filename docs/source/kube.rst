@@ -339,23 +339,57 @@ After you forward the ports then copy/paste the viusalization URL below and run 
 Kubernetes Pod Access
 ---------------------
 
-   To go inside the pods, you can type command: 
+To go inside the pods, you can type command: 
 
-    COMMAND: **kubectl exec -it <pod name> \-\- bash** (replace <pod name> with actual pod name)
+COMMANDS: 
 
-   To delete the pods type:
+.. code-block::
 
-    COMMAND: **kubectl delete all \-\-all \-\-all-namespaces**
+   kubectl exec -it <pod name> -- bash 
 
-   To get information on a pod type:
+Note: replace **<pod name>** with actual pod name..use this command to get the pod name
 
-    COMMAND: **kubectl describe pod <pod name>** (replace <pod name> with actual pod name)
+.. code-block::
 
-   Start minikube with NVIDIA GPU Access:
-     COMMAND: **/minikube start \-\-driver docker \-\-container-runtime docker \-\-gpus all \-\-cni calico \-\-memory 8192**
+   kubectl get pods -A
 
-   Start minikube with NO GPU:
-     COMMAND: **minikube start \-\-driver docker \-\-container-runtime docker \-\-cni calico \-\-memory 8192**
+To list service pods type:
+
+.. code-block::
+
+   kubectl get svc -A
+
+To list deployment pods type:
+
+.. code-block::
+
+   kubectl get deployments -A
+
+To delete the pods:
+
+-- code-block::
+
+   kubectl delete all --all --all-namespaces
+
+To get information on a pod type:
+
+.. code-block:: 
+
+   kubectl describe pod <pod name>
+
+Start minikube with NVIDIA GPU Access:
+
+.. code-block::
+
+     minikube start --driver docker --container-runtime docker --gpus all --cni calico --memory 8192
+
+**Note you may need to type: ./minikube**
+
+Start minikube with NO GPU:
+
+.. code-block::
+
+   minikube start --driver docker --container-runtime docker --cni calico --memory 8192
 
 .. tip::
 
