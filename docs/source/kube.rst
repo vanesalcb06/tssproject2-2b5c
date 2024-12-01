@@ -62,19 +62,19 @@ kubectl apply command
 
 .. attention::
 
-   MAKE SURE to update any tokens and passwords in this file:
+   MAKE SURE to update any tokens and passwords in these fields:
 
           - name: GITPASSWORD
-            value: '<ENTER GITHUB PASSWORD>'
+             value: '<ENTER GITHUB PASSWORD>'
 
           - name: KAFKACLOUDPASSWORD
-            value: '<Enter API secret>'
+             value: '<Enter API secret>'
 
           - name: MQTTPASSWORD
-            value: '<ENTER MQTT PASSWORD>'
+             value: '<ENTER MQTT PASSWORD>'
           
           - name: READTHEDOCS
-            value: '<ENTER READTHEDOCS TOKEN>'
+             value: '<ENTER READTHEDOCS TOKEN>'
 
 
 .. code-block:: YAML
