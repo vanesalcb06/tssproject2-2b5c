@@ -343,7 +343,7 @@ After you forward the ports then copy/paste the viusalization URL below and run 
 Kubernetes Pod Access Commands
 ---------------------
 
-To go inside the pods, you can type command: 
+**To go inside the pods, you can type command:** 
 
 .. code-block::
 
@@ -355,45 +355,65 @@ Note: replace **<pod name>** with actual pod name..use this command to get the p
 
    kubectl get pods -A
 
-To list service pods type:
+**To list service pods type:**
 
 .. code-block::
 
    kubectl get svc -A
 
-To list deployment pods type:
+**To list deployment pods type:**
 
 .. code-block::
 
    kubectl get deployments -A
 
-To delete the pods:
+**To Horizontally AUTO-SCALE Deployments type:**
+
+  .. code-block::
+
+     kubectl autoscale deployment  <deployment name> --cpu-percent=50 --min=1 --max=100
+
+.. important::
+
+   The above command instructs Kubernetes to scale pods based on 50% CPU utilization to a minimum number of pods of 1 (small workload) to a maximum of 100 pods for large world loads.  
+   
+   This is auto-scaling is very important to scale up and down your solution, while efficiently managing cloud computing costs.
+
+**To list deployments being auto-scaled type:**
+
+  .. code-block::
+
+     kubectl get hpa -A
+
+**To delete the pods:**
 
 .. code-block::
 
    kubectl delete all --all --all-namespaces
 
-To get information on a pod type:
+**To get information on a pod type:**
 
 .. code-block:: 
 
    kubectl describe pod <pod name>
 
-Start minikube with NVIDIA GPU Access:
+**Start minikube with NVIDIA GPU Access:**
 
 .. code-block::
 
      minikube start --driver docker --container-runtime docker --gpus all --cni calico --memory 8192
 
-**Note you may need to type: ./minikube**
+.. note::
 
-Start minikube with NO GPU:
+   Note you may need to type: **./minikube**
+
+**Start minikube with NO GPU:**
 
 .. code-block::
 
    minikube start --driver docker --container-runtime docker --cni calico --memory 8192
 
-DELETE minikube:
+**DELETE minikube:**
 
 .. code-block::
 
