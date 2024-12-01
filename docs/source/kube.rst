@@ -81,6 +81,10 @@ kubectl apply command
    ################# --solutionnamefile--
    --solutionnamecode--
 
+.. tip::
+
+   In the solution YAML file above, you can adjust the **replicas** field.  Currently, **replicas: 3** for demonstartion purposes. 
+
 mysql-storage.yml
 ------------------------
 
