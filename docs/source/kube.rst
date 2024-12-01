@@ -20,7 +20,7 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
    If you get the following WARNING from Kubernetes:
 
     Warning  FailedScheduling  default-scheduler  0/1 nodes are available: 1 Insufficient nvidia.com/gpu. preemption: 0/1 nodes are available: 1 No preemption victims found for 
-    incoming pod.  **Make sure no other application is using the GPU.**  You can check using: **nvidia-smi**
+    incoming pod.  **Make sure no other application is using the GPU.**  You can check by executing in terminal the command: **nvidia-smi**
 
     Oherwise, Issue the commands below:
 
