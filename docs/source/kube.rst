@@ -336,12 +336,10 @@ After you forward the ports then copy/paste the viusalization URL below and run 
 
    --visualizationurl--
 
-Kubernetes Pod Access
+Kubernetes Pod Access Command
 ---------------------
 
 To go inside the pods, you can type command: 
-
-COMMANDS: 
 
 .. code-block::
 
