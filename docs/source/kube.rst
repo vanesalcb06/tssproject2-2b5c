@@ -17,6 +17,18 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
 
    Make sure to STOP the TSS Container and other containers before running Kubernetes/Minikube.
 
+   If you get the following WARNING from Kubernetes:
+
+    Warning  FailedScheduling  13m    default-scheduler  0/1 nodes are available: 1 Insufficient nvidia.com/gpu. preemption: 0/1 nodes are available: 1 No preemption victims found for 
+    incoming pod.
+
+    Issue the command below:
+
+.. code-block::
+
+   sudo nvidia-ctk runtime configure --runtime=docker && sudo systemctl restart docker
+
+
 Based on your TML solution [--solutionname--] - if you want to scale your application with Kubernetes - you will need to apply the following YAML files.
 
 .. list-table::
