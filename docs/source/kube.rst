@@ -321,7 +321,7 @@ qdrant.yml
 .. tip::
    The number of replicas can be changed in the **cybersecuritywithprivategpt-3f10.yml** file: look for **replicas**.  You can increase or decrease the number of replicas based on the amout of real-time data you are processing.
 
-Kubernets Dashboard Visualization
+Kubernetes Dashboard Visualization
 ----------------------------------
 
 To visualize the dashboard you need to forward ports to your solution **deployment in Kubernetes**.  For this solution, the port forward command would be:
@@ -336,7 +336,7 @@ After you forward the ports then copy/paste the viusalization URL below and run 
 
    --visualizationurl--
 
-Kubernetes Pod Access Command
+Kubernetes Pod Access Commands
 ---------------------
 
 To go inside the pods, you can type command: 
