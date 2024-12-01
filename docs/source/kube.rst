@@ -64,16 +64,16 @@ kubectl apply command
 
    MAKE SURE to update any tokens and passwords in these fields:
 
-          - name: GITPASSWORD
+          - name: GITPASSWORD (MANDATORY)
              value: '<ENTER GITHUB PASSWORD>'
 
-          - name: KAFKACLOUDPASSWORD
+          - name: KAFKACLOUDPASSWORD (OPTIONAL)
              value: '<Enter API secret>'
 
-          - name: MQTTPASSWORD
+          - name: MQTTPASSWORD (OPTIONAL)
              value: '<ENTER MQTT PASSWORD>'
           
-          - name: READTHEDOCS
+          - name: READTHEDOCS (MANDATORY)
              value: '<ENTER READTHEDOCS TOKEN>'
 
 
