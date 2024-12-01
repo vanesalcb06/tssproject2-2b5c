@@ -60,7 +60,22 @@ kubectl apply command
 .. important::
    Copy and Paste this YAML file: --solutionnamefile-- - and save it locally.
 
-   Also, MAKE SURE to update any tokens and passwords in this file.
+.. attention::
+
+   MAKE SURE to update any tokens and passwords in this file:
+
+          - name: GITPASSWORD
+            value: '<ENTER GITHUB PASSWORD>'
+
+          - name: KAFKACLOUDPASSWORD
+            value: '<Enter API secret>'
+
+          - name: MQTTPASSWORD
+            value: '<ENTER MQTT PASSWORD>'
+          
+          - name: READTHEDOCS
+            value: '<ENTER READTHEDOCS TOKEN>'
+
 
 .. code-block:: YAML
 
