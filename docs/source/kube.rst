@@ -28,7 +28,9 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
 
    sudo apt update && sudo apt install -y nvidia-docker2
 
-   sudo nvidia-ctk runtime configure --runtime=docker && sudo systemctl restart docker
+   sudo nvidia-ctk runtime configure --runtime=docker 
+
+   sudo systemctl restart docker
 
 
 Based on your TML solution [--solutionname--] - if you want to scale your application with Kubernetes - you will need to apply the following YAML files.
