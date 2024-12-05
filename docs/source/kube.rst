@@ -245,31 +245,34 @@ privategpt.yml
             containers:
             - name: privategpt
               image: maadsdocker/tml-privategpt-with-gpu-nvidia-amd64 # IF you DO NOT have NVIDIA GPU use: maadsdocker/tml-privategpt-no-gpu-amd64
-              imagePullPolicy: IfNotPresent
-              resources:             # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
-                limits:              # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
-                  nvidia.com/gpu: 1  # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
-              ports:   
-              - containerPort: 8001
               env:
-              - name: NVIDIA_VISIBLE_DEVICES 
+              - name: NVIDIA_VISIBLE_DEVICES
                 value: all
               - name: DP_DISABLE_HEALTHCHECKS
                 value: xids
               - name: WEB_CONCURRENCY
-                value: "1"
+                value: "3"
               - name: GPU
-                value: "1"          
+                value: "1"
               - name: COLLECTION
-                value: "tml"  
+                value: "tml"
               - name: PORT
-                value: "8001"  
+                value: "8001"
               - name: CUDA_VISIBLE_DEVICES
-                value: "0"  
+                value: "0"
               - name: TSS
-                value: "0"  
+                value: "0"
               - name: KUBE
-                value: "1"            
+                value: "1"
+              resources:             # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+                limits:              # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+                  nvidia.com/gpu: 1  # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+              ports:
+              - containerPort: 8001
+            tolerations:             # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+            - key: nvidia.com/gpu    # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+              operator: Exists       # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU
+              effect: NoSchedule     # REMOVE or COMMENT OUT: IF you DO NOT have NVIDIA GPU     
       ---
       apiVersion: v1
       kind: Service
@@ -285,8 +288,7 @@ privategpt.yml
           protocol: TCP
           targetPort: 8001
         selector:
-          app: privategpt
-                    
+          app: privategpt                    
           
 qdrant.yml
 ---------------
