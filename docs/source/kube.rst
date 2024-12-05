@@ -1,7 +1,7 @@
-Scaling [--solutionname--] With Kubernetes
+Scaling [tssproject2-2b5c] With Kubernetes
 ===========================
 
-Generated On: --datetime-- UTC
+Generated On: 2024-12-05 19:55:37 UTC
 
 You can scale your solution with Kubernetes.  To do so, will will need to apply the following YAML files to your Kubernetes cluster.
 
@@ -35,13 +35,13 @@ You can scale your solution with Kubernetes.  To do so, will will need to apply 
    sudo systemctl restart docker
 
 
-Based on your TML solution [--solutionname--] - if you want to scale your application with Kubernetes - you will need to apply the following YAML files.
+Based on your TML solution [tssproject2-2b5c] - if you want to scale your application with Kubernetes - you will need to apply the following YAML files.
 
 .. list-table::
 
    * - **YML File**
      - **Description**
-   * - :ref:`--solutionnamefile--`
+   * - :ref:`tssproject2-2b5c.yml`
      - This is your main solution YAML file.  
  
        It MUST be applied to your Kubernetes cluster.
@@ -74,13 +74,13 @@ kubectl Create command
 
 .. code-block:: YAML
 
-   --kubectl--
+   kubectl apply -f mysql-storage.yml -f mysql-db-deployment.yml -f qdrant.yml -f privategpt.yml -f tssproject2-2b5c.yml
 
---solutionnamefile--
+tssproject2-2b5c.yml
 ------------------------
 
 .. important::
-   Copy and Paste this YAML file: --solutionnamefile-- - and save it locally.
+   Copy and Paste this YAML file: tssproject2-2b5c.yml - and save it locally.
 
 .. attention::
 
@@ -100,8 +100,110 @@ kubectl Create command
 
 .. code-block:: YAML
 
-   ################# --solutionnamefile--
-   --solutionnamecode--
+   ################# tssproject2-2b5c.yml
+   
+     apiVersion: apps/v1
+     kind: Deployment
+     metadata:
+       name: tssproject2-2b5c
+     spec:
+       selector:
+         matchLabels:
+           app: tssproject2-2b5c
+       replicas: 3 # tells deployment to run 1 pods matching the template
+       template:
+         metadata:
+           labels:
+             app: tssproject2-2b5c
+         spec:
+           containers:
+           - name: tssproject2-2b5c
+             image: vanesalcb/tssproject2-2b5c-amd64:latest
+             volumeMounts:
+             - name: dockerpath
+               mountPath: /var/run/docker.sock
+             ports:
+             - containerPort: 8883
+             - containerPort: 41445
+             - containerPort: 46265
+             - containerPort: 37419
+             env:
+             - name: TSS
+               value: '0'
+             - name: SOLUTIONNAME
+               value: 'tssproject2-2b5c'
+             - name: SOLUTIONDAG
+               value: 'solution_preprocessing_ai_mqtt_dag-tssproject2-2b5c'
+             - name: GITUSERNAME
+               value: 'vanesalcb06'
+             - name: GITREPOURL
+               value: 'https://github.com/vanesalcb06/raspberrypi.git'
+             - name: SOLUTIONEXTERNALPORT
+               value: '37419'
+             - name: CHIP
+               value: 'amd64'
+             - name: SOLUTIONAIRFLOWPORT
+               value: '41445'
+             - name: SOLUTIONVIPERVIZPORT
+               value: '46265'
+             - name: DOCKERUSERNAME
+               value: 'vanesalcb'
+             - name: CLIENTPORT
+               value: '8883'
+             - name: EXTERNALPORT
+               value: '41923'
+             - name: KAFKACLOUDUSERNAME
+               value: ''
+             - name: VIPERVIZPORT
+               value: '9005'
+             - name: MQTTUSERNAME
+               value: 'hivemq.webclient.1725974242180'
+             - name: AIRFLOWPORT
+               value: '9000'
+             - name: GITPASSWORD
+               value: '<ENTER GITHUB PASSWORD>'
+             - name: KAFKACLOUDPASSWORD
+               value: '<Enter API secret>'
+             - name: MQTTPASSWORD
+               value: '<ENTER MQTT PASSWORD>'
+             - name: READTHEDOCS
+               value: '<ENTER READTHEDOCS TOKEN>'
+             - name: qip 
+               value: 'privategpt-service' # This is private GPT service in kubernetes
+             - name: KUBE
+               value: '1'
+           volumes: 
+           - name: dockerpath
+             hostPath:
+               path: /var/run/docker.sock
+   ---
+     apiVersion: v1
+     kind: Service
+     metadata:
+       name: tssproject2-2b5c-service
+       labels:
+         app: tssproject2-2b5c-service
+     spec:
+       type: NodePort #Exposes the service as a node ports
+       ports:
+       - port: 8883
+         name: p1
+         protocol: TCP
+         targetPort: 8883
+       - port: 41445
+         name: p2
+         protocol: TCP
+         targetPort: 41445
+       - port: 46265
+         name: p3
+         protocol: TCP
+         targetPort: 46265
+       - port: 37419
+         name: p4
+         protocol: TCP
+         targetPort: 37419
+       selector:
+         app: tssproject2-2b5c
 
 .. tip::
 
@@ -358,13 +460,13 @@ To visualize the dashboard you need to forward ports to your solution **deployme
 
 .. code-block::
 
-   --kube-portforward--
+   kubectl port-forward deployment/tssproject2-2b5c 46265:46265
 
 After you forward the ports then copy/paste the viusalization URL below and run your dashboard.
 
 .. code-block::
 
-   --visualizationurl--
+   http://localhost:46265/tml-cisco-network-privategpt-monitor.html?topic=cisco-network-preprocess,cisco-network-privategpt&offset=-1&groupid=&rollbackoffset=400&topictype=prediction&append=0&secure=1
 
 Kubernetes Pod Access Commands
 ---------------------
